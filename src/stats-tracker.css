@@ -1,0 +1,483 @@
+.stat-tracker-mod-col-header {
+    padding: 10px 0 5px;
+    font-size: 20px;
+    top: 59px;
+    background: #222;
+    z-index: 9;
+    border-bottom: 1px solid #444;
+}
+<style>
+.stat-tracker-mod-row, .stat-tracker-mod-row .row-data {
+    display: flex
+;
+    align-items: center;
+    transition: margin 0.4s, height 0.4s, background 0.4s, box-shadow 0.4s;
+}
+
+.stat-tracker-mod-row > .date-col, .stat-tracker-mod-row > .position-col, .stat-tracker-mod-row > .account-col, .stat-tracker-mod-row > .show-col, .stat-tracker-mod-row .row-data > div {
+    padding: 5px;
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position-col {
+    min-width: 40px;
+    flex: 1;
+}
+
+.stat-tracker-mod-row > .account-col {
+    flex: 3;
+    min-width: 160px;
+    justify-content: flex-start;
+}
+
+.account-col span {
+    display: flex;
+    align-items: center;
+}
+
+.stat-tracker-mod-row, .stat-tracker-mod-row .row-data {
+    display: flex;
+    align-items: center;
+    transition: margin 0.4s, height 0.4s, background 0.4s, box-shadow 0.4s;
+}
+
+.stat-tracker-mod-row .row-data {
+    flex: 10;
+    align-items: center;
+}
+
+.stat-tracker-mod-row .row-data > div.rating-col {
+    flex: 2;
+}
+
+.stat-tracker-mod-row .row-data > div {
+    flex: 1;
+    align-items: center;
+}
+.stat-tracker-mod-row {
+    background: #222;
+}
+.stat-tracker-mod-row:hover {
+    background: rgba(138, 212, 255, 0.2);
+}
+.stat-tracker-mod-row.expanded {
+    font-weight: bold;
+    background: #303030;
+    border-bottom: 1px solid #111;
+    box-shadow: 0 0 5px 2px black;
+    margin-top: 5px;
+}
+.stat-tracker-mod-row.leaderboard-expansion-row {
+    background: #303030;
+    margin-bottom: 5px;
+    box-shadow: 0 3px 3px -2px black;
+}
+
+.spinner-wrapper.small .spinner:after {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    border-top: 2px solid rgba(0, 0, 0, 0.75);
+    border-right: 2px solid #ffffff4f;
+    border-left: 3px solid rgba(0, 0, 0, 0.75);
+    left: -1px;
+}
+
+.spinner:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-top: 0.25rem solid rgba(0, 0, 0, 0.75);
+    border-right: 0.25rem solid #ffffff4f;
+    border-left: 0.25rem solid rgba(0, 0, 0, 0.75);
+    border-radius: 100%;
+    transition: all .2s, border .7s;
+}
+
+.spinner-wrapper.small {
+    vertical-align: middle;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font: 15px "Nunito", Segoe UI;
+    width: 20px;
+    margin-top: -2px;
+    height: 20px;
+    position: relative;
+}
+
+.spinner-wrapper .spinner.arrow:after {
+    animation: none;
+    border-style: solid;
+    transform: rotate(135deg);
+    border-radius: 0;
+    border-width: 5px 5px 0 0;
+    display: inline-block;
+    height: 9px;
+    left: 10px;
+    margin-top: -2px;
+    border-color: rgba(255, 255, 255, .5);
+    width: 9px;
+    transition: none;
+}
+
+.spinner-wrapper .spinner.up-arrow:after {
+    transform: rotate(-45deg);
+    margin-top: 5px;
+}
+.account-col img {
+    height: 32px;
+    margin-right: 5px;
+}
+
+.expansion-row-content {
+    flex: 14;
+}
+
+article.player-summary {
+    margin: 15px 15px 15px 0px;
+}
+
+.h5-spartan-image {
+    min-width: 230px;
+    height: 300px;
+    background-size: contain;
+    margin-right: 25px;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 50px;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.player-details {
+    margin: 10px 0;
+}
+
+.flex-grow-children {
+    display: flex;
+    align-items: center;
+}
+
+.flex-grow, .flex-grow-children > *, .flex label {
+    flex: 1;
+}
+
+.player-breakdown section {
+    margin-right: 15px;
+}
+
+.player-breakdown h3 {
+    font-size: 22px;   
+    margin: 8px 0;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.progress-bar-inner {
+    background-color: #417bff;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.stats-breakdown {
+    flex: 4;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.stat-tracker-mod-rows p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.leaderboard-expansion-row .h5-spartan-image {
+    min-width: 185px;
+    height: 255px;
+}
+
+.rating-breakdown.rating-bar {
+    height: 136px;
+    border-radius: 20px;
+}
+
+.rating-bar.onyx, .rating-bar.bronze {
+    color: white;
+}
+
+.rating-breakdown {
+    border: 1px solid #111;
+    box-shadow: 0 0 2px 1px #111;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.rating-breakdown {
+    flex: 4;
+}
+
+.rating-bar {
+    border: 1px solid black;
+    display: block;
+    clear: both;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 5px;
+    min-width: 100px;
+    width: 100%;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.rating-bar:after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    content: "";
+    z-index: 2;
+    right: 0px;
+    top: 0px;
+    opacity: .25;
+}
+
+span.rating-title {
+    position: absolute;
+    z-index: 7;
+    opacity: 0;
+    transition: opacity .3s;
+    padding: 1mm 3mm;
+    background: white;
+    vertical-align: middle;
+    border-left: 1px solid #555;
+    color: black;
+    right: 0px;
+}
+
+.rating-breakdown.onyx .rating-image {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.rating-breakdown.rank-5 .rating-image {
+    background-position: -462px 0;
+}
+
+.rating-breakdown.onyx .rating-image, .rating-bar.onyx:after {
+    background-image: url(/public/images/h5/onyx-emblem.png);
+    background-repeat: no-repeat;
+}
+.rating-bar.onyx:after {
+    background-position: -5px -45px;
+}
+
+.rating-breakdown.rating-bar.onyx:after {
+    content: unset;
+}
+
+.rating-breakdown .rating-image {
+    position: absolute;
+    z-index: 9;
+    width: 120px;
+}
+
+.rating-image {
+    flex: 0 0 120px;
+    height: 130px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.rating-breakdown .rating-bar-wrapper {
+    height: 100%;
+}
+
+.rating-bar-wrapper {
+    position: relative;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.rating-bar-wrapper {
+    display: block;
+    height: 28px;
+    position: relative;
+}
+
+.rating-numbers {
+    position: absolute;
+    top: 30px;
+    left: 140px;
+    z-index: 8;
+}
+.rating-numbers > p:first-of-type {
+    font-size: 30px;
+}
+
+.rating-bar.onyx .rating-bar-inner, .awarded-badge.onyx {
+    background-color: rgba(54, 56, 57, 0.6);
+}
+
+.rating-breakdown .rating-bar-inner {
+    height: 100%;
+}
+
+.rating-bar-inner {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    height: 30px;
+    transition: background .3s;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #444;
+}
+
+.rating-breakdown.rank-5 .rating-image:after, span.rank-5 .rating-bar-wrapper:after {
+    content: '5';
+}
+
+.rating-image:after {
+    position: absolute;
+    bottom: 0px;
+    left: 90px;
+    opacity: 0.5;
+    font-size: 35px;
+}
+
+.stat-tracker-player-data {
+    font-size: 15px;
+    overflow: hidden;
+}
+.rating-bar:hover .rating-title {
+    opacity: 1;
+}
+.rating-bar .rating-bar-wrapper:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -3px;
+    left: 8px;
+    font-size: 25px;
+    z-index: 5;
+    color: rgba(255, 255, 255, .2);
+    font-weight: bold;
+}
+
+.stat-tracker-mod-row.low-opacity > * {
+    opacity: .3;
+}
+
+.rating-breakdown.onyx .rating-image {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+span.profile-stats {
+    display: inline-flex;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 5px;
+    transition: background .4s;
+    width: unset;
+    margin-right: 1%;
+    align-items: center;
+}
+
+span.medalsheet-halo5 {
+    background: url(https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medals_10-26-17-1ed917479dd14818b09ef10e29ff60b1.png);
+    background-size: 1024px 512px;
+    width: 37px;
+    height: 37px;
+    float: left;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.profile-stats-pergame {
+    display: block;
+    font-size: 14px;
+}
+
+h4 {
+    margin: 6px 0;
+}.top-medals {
+    margin-top: 15px;
+}
+
+.stat-tracker-mod-row.top-3.pos-1 {
+    background: rgb(255, 223, 0);
+    color: #222;
+}
+
+.stat-tracker-mod-row.top-3.pos-1:hover {
+    background: rgb(255, 233, 0);
+    box-shadow: 0 0 5px 2px rgb(210, 187, 25);
+}
+
+.stat-tracker-mod-row.top-3 {
+    font-size: 24px;
+    height: 55px;
+}
+
+.stat-tracker-mod-row.top-3.pos-2 {
+    background: rgba(211, 211, 211, 0.55);
+}
+
+.stat-tracker-mod-row.top-3.pos-2:hover {
+    background: rgba(211, 211, 211, 0.6);
+    box-shadow: 0 0 5px 1px rgb(185, 185, 185);
+}
+
+.stat-tracker-mod-row.top-3.pos-3 {
+    background: rgba(205, 127, 50, 0.5);
+}
+
+.stat-tracker-mod-row.top-3.pos-3:hover {
+    background: rgba(205, 127, 50, 0.6);
+    box-shadow: 0 0 5px 0 rgb(181, 95, 10);
+}
+
+.rating-breakdown.rank-3 .rating-image:after, 
+span.rank-3 .rating-bar-wrapper:after {
+    content: '3';
+}
+.stat-tracker-mod-col-header:hover {
+    background: #222;
+}
+
+.rating-breakdown.diamond .rating-image, .rating-bar.diamond:after {
+    background-image: url(/public/images/h5/diamond-sheet.png);
+}
+
+.rating-bar.rank-3:after {
+    background-position: -230px -45px;
+}
+
+.top-3.pos-1 .rating-bar .rating-bar-wrapper:after, .rating-bar.diamond .rating-bar-wrapper:after, .rating-bar.platinum .rating-bar-wrapper:after, .rating-bar.silver .rating-bar-wrapper:after, .rating-bar.gold .rating-bar-wrapper:after {
+    color: rgba(0, 0, 0, .4);
+}
+.rating-bar.diamond .rating-bar-inner{
+    background-color: rgba(185, 242, 255, 0.6);
+}
+.row-data > .highlight {
+    font-weight: bold;
+}
