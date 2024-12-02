@@ -119,7 +119,7 @@ export default function ProgressTrackerLineChart({ progress, cumulative, panelBu
                     ticks: {
                         color : '#fff',
                         font: {
-                            size: '14px'
+                            size: '13px'
                         },
                         callback: function(val) {
                             return (val > 1000000 ? parseFloat(val).toExponential(3) : parseFloat(val.toFixed(3)));

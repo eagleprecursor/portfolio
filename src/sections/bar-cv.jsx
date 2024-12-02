@@ -29,7 +29,7 @@ const BarCVSection = () => (
             </ul>
         </section>
         <section className='cv-list'>
-            <h1><span className='title'>Bar Staff – Revolución de Cuba Leeds</span><span className='location'>Leeds, UK</span></h1>
+            <h1><span className='title'>Bar Staff – Revolución de Cuba</span><span className='location'>Leeds, UK</span></h1>
             <h3>November 2021 – October 2022</h3>
             <p className='skills-list'>Skills Developed: Working under pressure, Self-confidence, Customer Service, Bartending</p>
             <ul>

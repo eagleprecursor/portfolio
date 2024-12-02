@@ -282,15 +282,17 @@ const LeaderboardSnippet = () => {
                     <h4>Headers</h4>
                     <p>Each generated Leaderboard is ordered by a chosen or default column. This column can be used to determine any additional columns that show alongside it (relevant data/stats) based on the column's type (int / duration / ratio etc.)</p>
                 </section>
-                <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
-                    <div class="position-col"><span>#</span></div>
-                    <div class="account-col"><span>Gamertag</span></div>
-                    <div class="row-data">
-                        <div class="rating-col highlight">Rating</div>
-                        <div class="k/d-col">K/D</div>
-                        <div class="killspergame-col">Kills per Game</div>
-                        <div class="win%-col">Win %</div>
-                        <div class="gamesplayed-col">Games Played</div>
+                <div className="stat-tracker-player-data">
+                    <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
+                        <div class="position-col"><span>#</span></div>
+                        <div class="account-col"><span>Gamertag</span></div>
+                        <div class="row-data">
+                            <div class="rating-col highlight">Rating</div>
+                            <div class="k/d-col">K/D</div>
+                            <div class="killspergame-col">Kills per Game</div>
+                            <div class="win%-col">Win %</div>
+                            <div class="gamesplayed-col">Games Played</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -434,47 +436,49 @@ const LeaderboardSnippet = () => {
                     <p>Players on the Leaderboard can be expanded to view the progression of their stats over time for the chosen order column. For my Halo 5 implementation, rating progress isn't shown and a breakdown is shown instead.</p>
                 </section>
                 <div class="stat-tracker-player-data darker">
-                    <div class="stat-tracker-mod-row expanded">
-                        <div class="position-col">
-                            <span>12</span>
-                        </div>
-                        <div class="account-col">
-                            <span>
-                                <img src="/images/h5/image-eagle.png" />
-                                Eagle Precursor
-                            </span>
-                            <button class="expand-row spinner-wrapper small showing">
-                                <span class="spinner up-arrow arrow"></span>
-                            </button>
-                        </div>
-                        <div class="row-data">
-                            <div class="kills-col highlight"><span>233026</span></div>
-                            <div class="killspergame-col"><span>29.33</span></div>
-                            <div class="rating-col">
-                                <span class="rating-bar onyx rank-5">
-                                    <span class="rating-title">Onyx 5</span>
-                                    <span class="rating-bar-wrapper">
-                                        <span class="rating-bar-inner" style={{ width: "51.1%" }}></span>
-                                    </span>
+                    <div className="stat-tracker-mod-rows">
+                        <div class="stat-tracker-mod-row expanded">
+                            <div class="position-col">
+                                <span>12</span>
+                            </div>
+                            <div class="account-col">
+                                <span>
+                                    <img src="/images/h5/image-eagle.png" />
+                                    Eagle Precursor
                                 </span>
+                                <button class="expand-row spinner-wrapper small showing">
+                                    <span class="spinner up-arrow arrow"></span>
+                                </button>
                             </div>
-                            <div class="gamesplayed-col">
-                                <span>7945</span>
+                            <div class="row-data">
+                                <div class="kills-col highlight"><span>233026</span></div>
+                                <div class="killspergame-col"><span>29.33</span></div>
+                                <div class="rating-col">
+                                    <span class="rating-bar onyx rank-5">
+                                        <span class="rating-title">Onyx 5</span>
+                                        <span class="rating-bar-wrapper">
+                                            <span class="rating-bar-inner" style={{ width: "51.1%" }}></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="gamesplayed-col">
+                                    <span>7945</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="stat-tracker-mod-row leaderboard-expansion-row">
-                        <div className="expansion-row-content">
-                            <ProgressTrackerLineChart 
-                                player={EagleProgressLeaderboard.player} 
-                                progress={EagleProgressLeaderboard.progress} 
-                                cumulative={cumulative} 
-                                panelButtons={
-                                    <>
-                                        <button onClick={() => showCumulative(!cumulative)}>{ cumulative ? "Show Daily Increases" : "Show Cumulative Progress"}</button>
-                                    </>
-                                }
-                            />
+                        <div className="stat-tracker-mod-row leaderboard-expansion-row">
+                            <div className="expansion-row-content">
+                                <ProgressTrackerLineChart 
+                                    player={EagleProgressLeaderboard.player} 
+                                    progress={EagleProgressLeaderboard.progress} 
+                                    cumulative={cumulative} 
+                                    panelButtons={
+                                        <>
+                                            <button onClick={() => showCumulative(!cumulative)}>{ cumulative ? "Show Daily Increases" : "Show Cumulative Progress"}</button>
+                                        </>
+                                    }
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -658,7 +662,7 @@ const StatsDisplay = () => (
     </section>
     <div class="main-stats-wrapper">
         <div class="main-stats flex">
-            <div class="flex-down">
+            <div class="flex-down flex-1 flex">
             <div class="profile-stats-wrapper">
                 <span class="profile-stats top-1">
                 <span>
@@ -870,7 +874,7 @@ const ComparingPlayers = () => (
                 <h4>Head to Head Stats viewer</h4>
                 <p>This breakdown shows each stat for both players (in this example Weapons -&gt; Standard) and the winner highlighted. The difference between the player's stats is also displayed using a Radar graph.</p>
             </section>
-            <div className="flex">
+            <div className="flex flex-down-800">
                 <div class="profile-stats-wrapper flex-1">
                     <span class="player-comparison-stats flex flex-down Weapons-stats">
                         <span class="flex">
@@ -986,7 +990,7 @@ const TechCVSection = () => (
         <section className='project-overview'>
             <h1>Gaming Stats Tracker and Leaderboards project</h1>
             <h3>2021 - Now</h3>
-            <p className='overview'>When I finished the third version of my Halo 5 Infection Leaderboard project (detailed below), I began working on the fourth version, which could support multiple Leaderboards and Progress trackers more easily. I wanted to make a Leaderboard for Matches played as well as the existing one for Stats, and have them both use the same code, work seamlessly and be easily updatable with new columns/metadata if necessary.</p>
+            <p className='overview'>When I finished the third version of my Halo 5 Infection Leaderboard project (detailed below), I began working on the fourth version, where my goal was to make a Leaderboard for Matches played as well as Stats, and have them both use the same codebase and be easily updatable with new columns/metadata if necessary.</p>
             <p>Through many iterations learning Laravel and React.js and figuring out the best design for the project, I have developed the Gaming Stats Tracker that realises this vision.</p>
             <p>In it's current state (v1.0 alpha), the system can make Leaderboards and Progress trackers from a big-data table of stats data related to players in a game. To show off how the system works, I build a proof-of-concept website that uses it for Halo 5 with the old stats data I had backed up from the Infection Leaderboard website before I took it offline.</p>
             <LeaderboardSnippet />
@@ -1004,7 +1008,7 @@ const TechCVSection = () => (
                     <p>Simple Player Data Badges</p>
                     <p>These badges are evaluated using the Games Played column, when the criteria is above a certain number</p>
                 </section>
-                <div className="badges-wrapper flex">
+                <div className="badges-wrapper flex  flex-wrap">
                     <div class="awarded-badge bronze">
                         <div class="badge-image">
                             <img src="/images/xbox-controller.png" />
@@ -1039,7 +1043,7 @@ const TechCVSection = () => (
                     <p>Custom Player Data Badge</p>
                     <p>This badge is evaluated using multiple columns, and multiple different criteria must be met before it can be awarded</p>
                 </section>
-                <div className="badges-wrapper flex">
+                <div className="badges-wrapper flex flex-wrap">
                     <div class="awarded-badge champion">
                         <div class="badge-image">
                             <img src="/images/h5/champ-emblem.png" />
@@ -1056,7 +1060,7 @@ const TechCVSection = () => (
                     <p>Fully Custom Badge</p>
                     <p>This badge can be evaluated against any criteria desired, that doesn't need data about players. An example could be tracking how many times a player has updated their stats.</p>
                 </section>
-                <div className="badges-wrapper flex">
+                <div className="badges-wrapper flex flex-wrap">
                     <div class="awarded-badge diamond">
                         <div class="badge-image">
                             <FontAwesomeIcon icon={faChartLine} style={{ height: "60px", margin: "15px"}} />
@@ -1111,8 +1115,8 @@ const TechCVSection = () => (
                 <h1 style={{ fontSize: "1.5em" }}>Halo 5 Infection Leaderboard</h1>
                 <h3>2018 - 2021</h3>
                 <h2>Matches Leaderboard (Records Portal)</h2>
-                <p>The old version of the Halo 5 Leaderboard website included a Matches Leaderboard (named Records Portal), a collage of the highest score achieved on every map in the game.</p>
-                <p>One of the main motivations for building the Stats Tracker was the ability to change the "Match History" big data table into a player data table like player stats, allowing a Leaderboard for all stats earnable in games (e.g. Highest score per map, Highest Kills per map, Highest Deaths per map etc.), and create a progress tracker to see the Records over time for each map.</p>
+                <p>The old version of the Halo 5 Leaderboard website included a Matches played Leaderboard (named Records Portal), a collage of the highest scores achieved on every map in the game.</p>
+                <p>As I described above, one of the main motivations for building the Stats Tracker was the ability to change the "Match History" big data table into a player data table like player stats, allowing a Leaderboard for all stats earnable in games (e.g. Highest score per map, Highest Kills per map, Highest Deaths per map etc.), and create a progress tracker to see the Records over time for each map.</p>
                 <p>I have not implemented this Leaderboard in the Halo 5 version of my new Stats Tracker as I no longer have access to the data about player's match history.</p>
                 <p>This screenshot shows an example of how the Records Portal used to appear: With the map photo, map name, record holders name and the score for the record game.</p>
                 <img src="/images/records-portal.png" style={{ maxWidth: "1200px", width: "100%", boxShadow: "0 0 5px -1px #eee" }}/>

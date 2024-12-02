@@ -117,7 +117,8 @@ div#view-wrapper {
 
 .intro-text {
     text-align: center;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     font-size: 20px;
     padding: 50px 0;
 }
@@ -128,17 +129,8 @@ div#view-wrapper {
 }
 
 .cv-list, .overview-text, .project-overview {
-    width: 1500px;
-}
-
-@media (min-width: 2000px) {
-	.project-overview {
-        max-width: 1950px;
-		width: unset;
-	}
-	span.player-comparison-stats span.weapon-halo5 {
-		height: 130px;
-	}
+    max-width: 1500px;
+	width: 100%;
 }
 
 .react-tabs {
@@ -253,6 +245,8 @@ section.cv-list, .project-overview {
 span.location {
     font-style: italic;
     font-weight: 100;
+	min-width: 130px;
+	text-align: right;
 }
 
 .cv-list > ul {
@@ -418,4 +412,73 @@ p.header {
 
 h2 {
     font-size: 1.4em;
+}
+
+.flex.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media (min-width: 2000px) {
+	.project-overview {
+        max-width: 1950px;
+		width: unset;
+	}
+	span.player-comparison-stats span.weapon-halo5 {
+		height: 130px;
+	}
+}
+
+@media (max-width: 1500px) {
+	
+	#view-wrapper .intro-text {
+		font-size:  16px;
+		padding: 10px 15px;
+	}
+
+	#page-footer-wrapper, .overview-text, section.cv-list, .project-overview {
+		padding: 0 15px;
+		font-size: 15px;
+	}
+
+	.react-tabs__tab-list > li {
+		font-size: 18px;
+	}
+	
+	#page-footer-wrapper  #page-footer {
+		padding: 10px;
+	}
+
+	.cv-list h1 {
+		font-size: 1.2em;
+	}
+	.cv-list h3 {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header-image {
+		height: 40vh;
+	}
+	.header-image-vignette {
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
+	}
+	.header-image-vignette-right {
+		background: linear-gradient(270deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
+	}
+	.header-image-title {
+		font-size: 50px;
+	}
+	.header-image-title-wrapper {
+		margin: 10px 0;
+	}
+	.header-image-subtitle {
+		margin-bottom: 0;
+	}
+	.header-image-title-vignette {
+		height: 130px;
+	}
+	#view-wrapper .intro-text.low-pad {
+		padding-bottom: 15px;
+	}
 }

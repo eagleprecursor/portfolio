@@ -363,11 +363,14 @@ span.rating-title {
 
 .stat-tracker-player-data {
     font-size: 15px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
 .rating-bar:hover .rating-title {
     opacity: 1;
 }
+
 .rating-bar .rating-bar-wrapper:after {
     position: absolute;
     width: 100%;
@@ -566,7 +569,8 @@ span.rank-3 .rating-bar-wrapper:after {
     box-shadow: 0 0 20px -8px rgb(54, 56, 57);
 }
 .badge-overview > .info {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin-right: 25px;
 }
 span.position-default {
@@ -643,7 +647,6 @@ span.panel-text {
 .column-selector-rows > div {
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
     flex-wrap: wrap;
 }
 .column-selector-rows > div:first-of-type {
@@ -652,6 +655,7 @@ span.panel-text {
 .second-row > .panel {
     background-color: rgba(255, 133, 73, 0.15);
     box-shadow: 0 0 5px 0 #ff8549;
+    margin-bottom: 15px;
 }
 .column-selector-rows .panel {
     flex: 1;
@@ -679,6 +683,7 @@ span.panel-text {
 .third-row > .panel {
     background-color: rgba(0, 158, 0, 0.15);
     box-shadow: 0 0 5px 0 #009e00;
+    margin-bottom: 15px;
 }
 
 .third-row > .panel.selected, .third-row > .panel:hover {
@@ -887,4 +892,115 @@ span.profile-stats.top-1 span.position-top100, span.profile-stats.top-2 span.pos
 
 .top-medals .profile-stats {
     width: unset;
+}
+
+.stat-tracker-mod-col-header.stat-tracker-mod-row,
+.stat-tracker-mod-rows {
+    min-width: 1200px;
+}
+
+@media (max-width: 1500px) {
+        
+    span.profile-stats, span.player-comparison-stats.Weapons-stats {
+        width: 50%;
+    }
+
+    .column-selector-rows .panel > button, .column-selector-rows .last-row .panel {
+        padding: 10px;
+        font-size: 13px;
+        min-width: 100px;
+    }
+
+    .column-selector-rows .panel > button .spinner.arrow:after {
+        right: 12px;
+        top: 13px;
+        left: auto;
+        left: initial;
+    }
+
+    .column-selector-rows .last-row .panel {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+        
+    .player-progress-charts article {
+        width: 100%;
+    }
+
+    span.player-comparison-stats.Weapons-stats {
+        width: 100%;
+    }
+
+    .head-to-head-bdown .player-summary {
+        flex-direction: column;
+    }
+
+    .head-to-head-bdown .player-summary > .flex-align-top {
+        align-items: center;
+    }
+
+    .head-to-head-bdown .player-details h3 {
+        font-size: 15px;
+    }
+
+    .h5-spartan-image {
+        min-width: 135px;
+        height: 179px;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-stats-wrapper {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .right-side-charts > div {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .right-side-charts {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    
+    .head-to-head-bdown .player-details {
+        margin: 0;
+    }
+    .flex-down-800 {
+        flex-direction: column;
+    }
+    .rating-head-to-head .rating-breakdown.rating-bar {
+        height: 200px;
+        min-width: 65px;
+    }
+    .rating-head-to-head .rating-breakdown .rating-image {
+        width: 40px;
+        height: 40px;
+    }
+    .rating-head-to-head .rating-breakdown .rating-image:after {
+        left: 42px;
+        font-size: 20px;
+    }
+
+    .comparison-breakdown {
+        margin: 10px 0 20px;
+    }
+
+    span.profile-stats {
+        width: 100%;
+    }
+
+    .flex-1 {
+        flex: 1;
+        align-items: unset;
+    }
+
+    .badge-overview {
+        flex-direction: column;
+    }
 }
