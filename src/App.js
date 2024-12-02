@@ -22,7 +22,7 @@ function App() {
 					<section className='dark-bg flex'>
 						<section class="intro-text">
 							<p>My name is Jordan, I'm 26 from Leeds and I have a BSc in Computer Science from Newcastle University, and this is my digital portfolio for projects that I have built, as well as future projects that I'm working on. I have a wide range of different tech skills but specialize mostly in Web Development and Design and analysing/presenting big data sets. My biggest project is my gaming stats tracker, which is detailed below.</p>
-							<p>In 2021 I took a career break to focus on my personal development, where I undertook the challenge of bartending. My CV from this time is available to view below. To find out more, and what I have achieved in the time away, as well as my future aspirations and goals, visit <a href="/bartending-craziness">my Personal Journey</a> page. </p>
+							<p>In 2021 I took a career break to focus on my personal development, confidence building and social skills where I undertook the challenge of bartending. My CV from this time is available to view below.</p>
 						</section>
 					</section>
 					<Tabs>
@@ -37,24 +37,21 @@ function App() {
 							<BarCVSection />
 						</TabPanel>
 					</Tabs>
-					<section>
-						Contact me card
+					<section className='dark-bg flex flex-down'>
+						<h1 className="big-header">Connect with me</h1>
+						<section class="intro-text low-pad">
+							<p>You can connect with me on my <a href='https://linkedin.com/jordanm.knight'>LinkedIn profile</a></p>
+							<p>Future updates to my projects will be posted both here and on my LinkedIn page.</p>
+							<p>At this time, I have no plans to upload the Halo 5 Stats Tracker, as the playerbase for the game is extremely low and although the public API still works, I anticipate that it may be turned off relatively soon. To view the Stats Tracker in action, <a href='https://www.youtube.com/watch?v=0oOmcVUOx4E'>click here to view an overview video</a> going through the Leaderboard, Profile Pages, Progress Tracker, and more!</p>
+						</section>
 					</section>
 				</div>
 			</div>
 			<div id="page-footer-wrapper">
 				<div id="page-footer">
-					<p class="header">Official Website of Eagle Precursor</p>
-					<ul>
-						<li><a href="http://twitter.com/eagle_precursor" target="_blank">Twitter</a></li>
-						<li><a href="http://instagram.com/eagle_precursor" target="_blank">Instagram</a></li>
-						<li><a href="http://youtube.com/r1s3ncl4n" target="_blank">Youtube</a></li>
-						<li><a href="https://www.linkedin.com/in/jordanm-knight/"><span>LinkedIn</span></a></li>
-						<li><a href="/users/eagle-precursor" data-route="users" data-username="Eagle Precursor" class="app-link">My Leaderboard Profile</a></li>
-					</ul>
-					<p class="footnote"><a href="/privacy" data-route="privacy" class="app-link">Privacy Policy and Cookies</a></p>
+					<p class="header">Legal</p>
 					<p class="footnote">This application is offered by Eagle Precursor, which is solely responsible for its content. It is not sponsored or endorsed by Microsoft. This application uses the Halo® Game Data API. Halo © Microsoft Corporation. All rights reserved. Microsoft, Halo, and the Halo Logo are trademarks of the Microsoft group of companies.</p>
-					<p class="footnote">Halo 5 &copy; Microsoft Corporation. The Halo 5 Infection Leaderboard was created under Microsoft's <a href="https://www.xbox.com/en-us/developers/rules">"Game Content Usage Rules"</a> using assets from Halo 5, and it is not endorsed by or affiliated with Microsoft.</p>
+					<p class="footnote">Halo 5 &copy; Microsoft Corporation. The Halo 5 implementation of the Gaming Stats Tracker as well as the Halo 5 Infection Leaderboard were created under Microsoft's <a href="https://www.xbox.com/en-us/developers/rules">"Game Content Usage Rules"</a> using assets from Halo 5, and it is not endorsed by or affiliated with Microsoft.</p>
 				</div>
 			</div>
 		</div>

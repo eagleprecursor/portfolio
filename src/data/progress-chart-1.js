@@ -35,34 +35,6 @@ export const EagleProgressLeaderboard = {
         "rows": [
             {
                 "stats": {
-                    "date": "Nov 4, 2024",
-                    "data": {
-                        "Kills": {
-                            "value": 233026,
-                            "slug": "kills"
-                        }
-                    }
-                },
-                "comparisons": {
-                    "Kills": 0
-                }
-            },
-            {
-                "stats": {
-                    "date": "Oct 22, 2024",
-                    "data": {
-                        "Kills": {
-                            "value": 233026,
-                            "slug": "kills"
-                        }
-                    }
-                },
-                "comparisons": {
-                    "Kills": 3541
-                }
-            },
-            {
-                "stats": {
                     "date": "Feb 28, 2021",
                     "data": {
                         "Kills": {

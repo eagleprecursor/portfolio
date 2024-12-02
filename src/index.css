@@ -85,9 +85,13 @@ div#page-footer {
 }
 
 .react-tabs {
-	max-width: 1550px;
 	text-align: center;
 }
+
+.project-overview {
+	max-width: 1550px;
+}
+
 .header-image {    
     height: 70vh;
     min-height: 350px;
@@ -128,12 +132,22 @@ div#view-wrapper {
 }
 
 @media (min-width: 2000px) {
-    main#view-content, div#page-footer, .react-tabs, .project-overview {
-        max-width: 1950px;
-    }
 	.project-overview {
+        max-width: 1950px;
 		width: unset;
 	}
+}
+
+.react-tabs {
+	width: 100%;
+}
+
+.white-section {
+    background: #fff;
+    width: 100%;
+    color: #222;
+    display: flex;
+    justify-content: center;
 }
 
 /**
@@ -238,7 +252,7 @@ span.location {
     font-weight: 100;
 }
 
-.cv-list ul {
+.cv-list > ul {
     list-style-type: "-  ";
 }
 
@@ -256,13 +270,13 @@ p.skills-list {
 }
 
 .stat-tracker-player-data ~ .overview-highlight-row {
-	margin-top: 15px;
+	margin-top: 25px;
 }
 
 .overview-highlight-row {
     box-shadow: 0 0 3px 3px #ff8549;
     padding: 10px;
-	margin: 25px 0;
+	margin: 35px 0;
 }
 
 .overview-highlight-row .info {
@@ -286,10 +300,119 @@ p.skills-list {
 }
 
 .overview-highlight-row.third {
-	box-shadow: 0 0 3px 3px #ae55ff;
+	box-shadow: 0 0 3px 3px #bc73ff;
 }
 
 .overview-highlight-row.third h4 {
-	color: #ae55ff;
-    border-bottom: 2px solid #ae55ff;
+	color: #bc73ff;
+    border-bottom: 2px solid #bc73ff;
+}
+
+.progress-line-chart .canvas-wrapper {
+    height: 400px;
+    width: unset;
+    float: none;
+}
+
+.progress-panel.panel {
+    padding: 15px 15px 0;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s;
+    border: 1px solid transparent;
+    flex: 1;
+}
+
+.panel p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.panel-buttons button {
+    color: #2ab1ee;    
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font: 15px "Nunito", Segoe UI;
+    cursor: pointer;
+}
+
+.react-tabs.tabs-horizontal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.react-tabs.tabs-horizontal .react-tabs__tab-panel {
+    /* flex: 0; */
+}
+
+.react-tabs.tabs-horizontal > *,
+.react-tabs.tabs-horizontal .react-tabs__tab-panel--selected {
+    /* flex: 1; */
+}
+
+
+.tabs-horizontal .react-tabs__tab-list {
+    flex-direction: column;
+    border-bottom: 0;
+}
+
+.tabs-horizontal .react-tabs__tab-list > * {
+    border-bottom: 1px solid #eee;
+}
+
+.profile-stats-pergame {
+    display: block;
+    font-size: 14px;
+}
+
+span.value-pos-row span {
+    margin-left: 4px;
+}
+
+span.position-top100 {
+    color: #26d226;
+    font-size: 14px;
+}
+
+span.profile-stats {
+    font-size: 14px;
+    width: 18%;
+}
+span.profile-stats.zero-value {
+    opacity: 0.4;
+}
+
+section.project-overview {
+    border-bottom: 3px solid #666;
+}
+
+section.project-overview.no-border,
+.white-section section.project-overview {
+	border-bottom: none;
+}
+
+h1.big-header {
+    font-size: 32px;
+    border-bottom: 1px solid;
+}
+
+p.header {
+    font-size: 18px;
+}
+
+.intro-text.low-pad {
+	padding: 0;
+	padding-bottom: 15px;
+    margin-top: -15px;
+}
+
+h2 {
+    font-size: 1.4em;
 }
