@@ -16,7 +16,7 @@ const LeaderboardSnippet = () => {
         <section className='leaderboard-overview'>
             <h2>Leaderboards</h2> 
             <p>A Leaderboard is a list of player stats ordered by a specific column in descending order. Each column in a <b>player data table</b> (big-data stats table) has a type, by default an Integer, which allows for this comparison.</p>
-            <p>The <b>Rating</b> column type is an integer either from the game or derived from the player's stats that has tiers/categories depending on the value. For my Halo 5 proof-of-concept implementation, I created a Rating for Infection with tiers named after Arena Ranks (Bronze-Onyx and Champion) and used this as the main order column. But any column about stats can be used to order the Leaderboard, even ratios of columns, for example: K/D (Kills/Deaths).</p>
+            <p>The <b>Rating</b> column type is an integer either from the game or derived from the player's stats that has tiers/categories depending on the value. For my Halo 5 proof-of-concept implementation, I created a Rating for Infection with tiers named after Arena Ranks in Halo 5: Guardians (Bronze-Onyx and Champion) and used this as the main order column.</p><p>Any column about stats can be used to order the Leaderboard, even ratios of columns, for example: K/D (Kills/Deaths). Ratios of columns aren't stored in the big-data table, they are Virtual Columns (as opposed to Stored Columns) generated only when needed.</p>
             <div className="stat-tracker-player-data">
                 <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
                     <div class="position-col"><span>#</span></div>
@@ -299,7 +299,8 @@ const LeaderboardSnippet = () => {
             <div className="overview-highlight-row second">
                 <section className="info">
                     <h4>Rows</h4>
-                    <p>Rows are displayed in position order, highlighting #1, #2 and #3. The Leaderboard API can be customised to filter the results set, for example, by only showing players that have over 1000 games</p>
+                    <p>Rows are displayed in position order, highlighting #1, #2 and #3. The Leaderboard API can be customised to filter the results set, for example, by only showing players that have over 1000 games.</p>
+                    <p>In programming terms, the "Base Leaderboard" controller can be implemented with any filters (called Options) to modify the results. One option that I use on the Halo 5 Stats Tracker is called <b>Show Historical</b>, which accepts a date, and filters any rows that are newer than it in order to show what the Leaderboard used to look like in the past.</p>
                 </section>
                 <div class="stat-tracker-player-data">
                     <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
@@ -490,7 +491,11 @@ const LeaderboardSnippet = () => {
 const MedalsDisplay = () => (
     <section className="overview-for-medals">
         <div className="overview-highlight-row">
-            <section className="info"><h4>Medals by Category: Multi Kill</h4><p>All medals that the player has earned are displayed, along with the count and position. </p></section>
+            <section className="info">
+                <h4>Medals by Category: Multi Kill</h4>
+                <p>All medals that the player has earned are displayed, along with the count and position.</p>
+                <p>In Halo 5, Multi Kill medals are not ordered alphabetically, but ordered by what the multikill is. For example, Overkill = 4 kills, Killionaire = 10 kills. Therefore, to solve this issue, the stats tracker allows any set of columns that were created using metadata to be sorted using any custom algorithm.</p>
+            </section>
             <div class="profile-stats-wrapper">
                 <span class="profile-stats">
                     <span class="medalsheet-halo5" style={{ width: "37px", height: "37px", backgroundSize: "1024px 512px", backgroundPosition: "-592px -37px"}}></span>
@@ -576,7 +581,11 @@ const MedalsDisplay = () => (
             </div>
         </div>
         <div className="overview-highlight-row second">
-            <section className="info"><h4>Medals by Category: Weapon Profiency</h4><p>Any medals that a player has not earned can also be tracked, either showing as un-earned or completely hidden.</p></section>
+            <section className="info">
+                <h4>Medals by Category: Weapon Profiency</h4>
+                <p>Any medals that a player has not earned can also be tracked, either showing as un-earned or completely hidden.</p>
+                <p>Using Laravel resources, additional data about each column is returned (in this case, the "per-game" value, which is calculated in code, not in the database query).</p>
+            </section>
             <div class="profile-stats-wrapper">
                 <span class="profile-stats">
                     <span class="medalsheet-halo5" style={{ width: "37px", height: "37px", backgroundSize: "1024px 512px", backgroundPosition: "-740px 0px"}}></span>
@@ -990,18 +999,19 @@ const TechCVSection = () => (
         <section className='project-overview'>
             <h1>Gaming Stats Tracker and Leaderboards project</h1>
             <h3>2021 - Now</h3>
-            <p className='overview'>When I finished the third version of my Halo 5 Infection Leaderboard project (detailed below), I began working on the fourth version, where my goal was to make a Leaderboard for Matches played as well as Stats, and have them both use the same codebase and be easily updatable with new columns/metadata if necessary.</p>
-            <p>Through many iterations learning Laravel and React.js and figuring out the best design for the project, I have developed the Gaming Stats Tracker that realises this vision.</p>
-            <p>In it's current state (v1.0 alpha), the system can make Leaderboards and Progress trackers from a big-data table of stats data related to players in a game. To show off how the system works, I build a proof-of-concept website that uses it for Halo 5 with the old stats data I had backed up from the Infection Leaderboard website before I took it offline.</p>
+            <p className='overview'>When I finished the third version of my Halo 5 Infection Leaderboard project which was a website to track stats and generate Leaderboards for Halo 5: Guardians's Infection game mode; I began working on the fourth version, where my goal was to make a Leaderboard for Matches played (Highest Score per match, per map, and etc.) as well as Stats, and have them both use the same codebase and be easily updatable if the game added anything new.</p>
+            <p>Through many iterations learning Laravel and React.js and figuring out the best design for the project, I have developed my Gaming Stats Tracker that realises this vision.</p>
+            <p>In it's current state (v1.0 alpha), the system can make Leaderboards and Progress trackers from a big-data table of stats data related to players in a game. This allows for simple Leaderboards (ones that just track Players and Score), all the way up to Leaderboards with hundreds of different stats/medals.</p>
+            <p>To show off how the system works, I build a proof-of-concept website that uses it for Halo 5 with the old stats data I had backed up from the Infection Leaderboard website before I took it offline.</p>
             <LeaderboardSnippet />
             <h2>Player Data - Stats Overview, Badges, Progress Tracker</h2>
-            <p>All of the stats that are stored about players for a game can be used to build profile pages (a stats overview / service record) for each player, giving a breakdown of their stats by category, as well as showing their Leaderboard position for each. The Leaderbord API supports showing players for any given order column by calculating the player's position for it and using it to find the page they are on.</p>
+            <p>All of the stats that are stored about players for a game can be used to build profile pages (a stats overview / service record) for each player, giving a breakdown of their stats by category, as well as showing their Leaderboard position for each. The Leaderbord API supports <b>"showing" players</b> for any given order column by calculating the player's position for it and using it to find the page they are on. The frontend system can then navigate to that page, and scroll to the player on it.</p>
             <h3>Stats Overview: Examples from Halo 5 players</h3>
             <p>Stats columns can be categorized by multiple criteria within the API. In Halo 5, most stats are categorized by their type and optional sub-category. For example, a Medal is a type of stat that can be earned in-game which has an image and description. Each medal also has a sub-category, describing what kind of medal that it is.</p>
             <MedalsDisplay />
             <StatsDisplay />
             <h3>Badges</h3>
-            <p>Player Badges within the Stats Tracker are accolades that can be given/awarded to players when they meet a certain criteria within the game. The most simple type of badge works on a single column in a single player data table, for example, awarding a badge to a player once they have played 500 games of Infection. More complicated badges that use multiple columns and multiple criteria can also be created. Badges can be given custom images, or derive their image from the column's metadata (for a medal this would be the Medal Image). When a player updates their stats within the stat-tracker, their stats will be evaluated against all the badges to see if they meet the criteria for them.</p>
+            <p>Player Badges within the Stats Tracker are accolades that can be given/awarded to players when they meet a certain criteria within the game. The most simple type of badge works on a single column in a single player data table. More complicated badges that use multiple columns and multiple criteria can also be created. Badges can be given custom images, or derive their image from the column's metadata (for a medal this would be the Medal Image). When a player updates their stats within the stat tracker, their stats will be evaluated against all the badges to see if they meet the criteria for them.</p>
             <h4>Example Badges:</h4>
             <div className="badge-overview">
                 <section className="info">
@@ -1041,7 +1051,7 @@ const TechCVSection = () => (
             <div className="badge-overview">
                 <section className="info">
                     <p>Custom Player Data Badge</p>
-                    <p>This badge is evaluated using multiple columns, and multiple different criteria must be met before it can be awarded</p>
+                    <p>This badge is evaluated using multiple Infection Stats columns, and multiple different criteria must be met before it can be awarded</p>
                 </section>
                 <div className="badges-wrapper flex flex-wrap">
                     <div class="awarded-badge champion">
@@ -1058,7 +1068,7 @@ const TechCVSection = () => (
             <div className="badge-overview">
                 <section className="info">
                     <p>Fully Custom Badge</p>
-                    <p>This badge can be evaluated against any criteria desired, that doesn't need data about players. An example could be tracking how many times a player has updated their stats.</p>
+                    <p>These badges are fully customisable, and could use player data, user data, multiple criteria, etc.</p>
                 </section>
                 <div className="badges-wrapper flex flex-wrap">
                     <div class="awarded-badge diamond">

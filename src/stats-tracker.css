@@ -145,6 +145,7 @@
 
 .expansion-row-content {
     flex: 14;
+    max-width: 100%;
 }
 
 article.player-summary {
@@ -902,7 +903,7 @@ span.profile-stats.top-1 span.position-top100, span.profile-stats.top-2 span.pos
 @media (max-width: 1500px) {
         
     span.profile-stats, span.player-comparison-stats.Weapons-stats {
-        width: 50%;
+        width: 49%;
     }
 
     .column-selector-rows .panel > button, .column-selector-rows .last-row .panel {
