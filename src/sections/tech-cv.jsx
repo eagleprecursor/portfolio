@@ -15,8 +15,7 @@ const LeaderboardSnippet = () => {
     return (
         <section className='leaderboard-overview'>
             <h2>Leaderboards</h2> 
-            <p>A Leaderboard is a list of player stats ordered by a specific column in descending order. Each column in a <b>player data table</b> (big-data stats table) has a type, by default an Integer, which allows for this comparison.</p>
-            <p>The <b>Rating</b> column type is an integer either from the game or derived from the player's stats that has tiers/categories depending on the value. For my Halo 5 proof-of-concept implementation, I created a Rating for Infection with tiers named after Arena Ranks in Halo 5: Guardians (Bronze-Onyx and Champion) and used this as the main order column.</p><p>Any column about stats can be used to order the Leaderboard, even ratios of columns, for example: K/D (Kills/Deaths). Ratios of columns aren't stored in the big-data table, they are Virtual Columns (as opposed to Stored Columns) generated only when needed.</p>
+            <p>A Leaderboard is a list of player stats ordered by a specific column in descending order. Every stats column in a <b>Player Data table</b> (Big Data stats table) is stored as an number, but can have a different type affecting how it is displayed. For example: A duration column is compared by it's value, but displayed as minutes and seconds.</p>
             <div className="stat-tracker-player-data">
                 <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
                     <div class="position-col"><span>#</span></div>
@@ -277,6 +276,7 @@ const LeaderboardSnippet = () => {
                     </div>
                 </div>
             </div>
+            <p>The <b>Rating</b> column type is a number that is converted to a name with tiers/categories depending on the value. For my Halo 5 proof-of-concept implementation, I created a Rating for Infection with tiers named after Arena Ranks in Halo 5: Guardians (Bronze-Onyx and Champion) and used this as the main order column.</p><p>Any column about stats can be used to order the Leaderboard, even ratios of columns, for example: K/D (Kills/Deaths). Ratios of columns aren't stored in the big-data table, they are Virtual Columns (as opposed to Stored Columns) generated only when needed.</p>
             <div className="overview-highlight-row">
                 <section className="info">
                     <h4>Headers</h4>
@@ -999,9 +999,12 @@ const TechCVSection = () => (
         <section className='project-overview'>
             <h1>Gaming Stats Tracker and Leaderboards project</h1>
             <h3>2021 - Now</h3>
-            <p className='overview'>When I finished the third version of my Halo 5 Infection Leaderboard project which was a website to track stats and generate Leaderboards for Halo 5: Guardians's Infection game mode; I began working on the fourth version, where my goal was to make a Leaderboard for Matches played (Highest Score per match, per map, and etc.) as well as Stats, and have them both use the same codebase and be easily updatable if the game added anything new.</p>
-            <p>Through many iterations learning Laravel and React.js and figuring out the best design for the project, I have developed my Gaming Stats Tracker that realises this vision.</p>
-            <p>In it's current state (v1.0 alpha), the system can make Leaderboards and Progress trackers from a big-data table of stats data related to players in a game. This allows for simple Leaderboards (ones that just track Players and Score), all the way up to Leaderboards with hundreds of different stats/medals.</p>
+            <b><u>Halo 5 Infection Leaderboard</u></b>
+            <p>The Halo 5 Infection Leaderboard was a project I developed for players to view their Infection stats, and to see where they ranked on the Leaderboard against other players.</p>
+            <p>This project started as a single page website with only one Leaderboard (player score) to a website that tracked over 100 different stats for <b>50K+ players</b> as well as almost <b>1 Million match results</b> (games played). Players could use a progress tracker to view how their stats changed over time, and a games viewer to display detailed stats from a match result.</p>
+            <b><u>Motivation for the Gaming Stats Tracker</u></b>
+            <p>In the old system, what I called the <b>Records Portal</b> (Leaderboard for matches played) used a different codebase to the Leaderboard for player stats. The matches played Leaderboard was only able to show the highest scoring game (the record) for each map. My aspiration for Version 4 was for matches played to use the same Leaderboard system as player stats, allowing for example: A Leaderboard showing the Top 50 scores for a map, A Leaderboard showing the Top 10 Shortest matches played, etc.</p>
+            <p>My Gaming Stats Tracker realizes this vision. In it's current state (v1.0 alpha), the system can generate a Leaderboard from any <b>Big Data table</b> of player stats data.</p>
             <p>To show off how the system works, I build a proof-of-concept website that uses it for Halo 5 with the old stats data I had backed up from the Infection Leaderboard website before I took it offline.</p>
             <LeaderboardSnippet />
             <h2>Player Data - Stats Overview, Badges, Progress Tracker</h2>
@@ -1124,16 +1127,18 @@ const TechCVSection = () => (
             <section className='project-overview'>
                 <h1 style={{ fontSize: "1.5em" }}>Halo 5 Infection Leaderboard</h1>
                 <h3>2018 - 2021</h3>
+                <p>As previously detailed, the Halo 5 Infection Leaderboard was a project I developed for players to view their Infection stats, and to see where they ranked on the Leaderboard against other players.</p>
+                <p>This section will only list features of the project that I have not yet included within the Stats Tracker.</p>
                 <h2>Matches Leaderboard (Records Portal)</h2>
                 <p>The old version of the Halo 5 Leaderboard website included a Matches played Leaderboard (named Records Portal), a collage of the highest scores achieved on every map in the game.</p>
                 <p>As I described above, one of the main motivations for building the Stats Tracker was the ability to change the "Match History" big data table into a player data table like player stats, allowing a Leaderboard for all stats earnable in games (e.g. Highest score per map, Highest Kills per map, Highest Deaths per map etc.), and create a progress tracker to see the Records over time for each map.</p>
                 <p>I have not implemented this Leaderboard in the Halo 5 version of my new Stats Tracker as I no longer have access to the data about player's match history.</p>
                 <p>This screenshot shows an example of how the Records Portal used to appear: With the map photo, map name, record holders name and the score for the record game.</p>
-                <img src="/images/records-portal.png" style={{ maxWidth: "1200px", width: "100%", boxShadow: "0 0 5px -1px #eee" }}/>
+                <img src="/images/records-portal.png" style={{ maxWidth: "1400px", width: "100%", padding: "5px", border: "1px solid", }}/>
                 <h2>Games Viewer</h2>
                 <p>The old version of the website also had a page to view a Match Result from the Match History table, called a Game on the website. This page was very similar to the profile stats overview page in the Stats Tracker, but for the game rather than a single player. The stats from the "perspective" of the winner were shown, but the game could be loaded from a different perspective to view someone else's stats from that game.</p>
                 <p>This screenshot shows an example of how the Games viewer for a Match result used to appear: With the stats, a radar graph of all players killed by the perspective player, and medals earned by that player.</p>
-                <img src="/images/games-viewer-white.png" style={{ maxWidth: "1200px", width: "100%", boxShadow: "0 0 5px -1px #eee" }}/>
+                <img src="/images/games-viewer-white.png" style={{ maxWidth: "1400px", width: "100%", padding: "5px", border: "1px solid", marginBottom: "20px" }}/>
             </section>
         </section>
 

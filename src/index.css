@@ -93,7 +93,7 @@ div#page-footer {
 }
 
 .header-image {    
-    height: 70vh;
+    height: 65vh;
     min-height: 350px;
     max-height: none;
     background-image: url(/public/images/headshot.jpg);
@@ -120,7 +120,7 @@ div#view-wrapper {
     max-width: 1200px;
     width: 100%;
     font-size: 20px;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .overview-text {
@@ -398,6 +398,7 @@ section.project-overview.no-border,
 h1.big-header {
     font-size: 32px;
     border-bottom: 1px solid;
+    margin-top: 25px;
 }
 
 p.header {
