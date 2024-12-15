@@ -873,7 +873,7 @@ const ComparingPlayers = () => (
                             </section>
                         </div>
                     </div>
-                    <div class="h5-spartan-image" style={{ backgroundImage: "url('https://image.halocdn.com/h5/spartans/1102000_0_2012_3039_48_28?width=512&amp;crop=Full&amp;api-version=2016-01-26&amp;hash=hIvEYZ7jk0hqGOjENBbi0234%2feY1NettkJep%2beh9fxI%3d')" }}></div>
+                    <div class="h5-spartan-image" style={{ backgroundImage: "url('/images/h5/spartan-eagle2.png')"}}></div>
                     </div>
                 </article>
             </section>
