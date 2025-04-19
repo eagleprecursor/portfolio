@@ -4,11 +4,12 @@ import './index.css';
 import './stats-tracker.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider } from 'react-router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={App} />;
   </React.StrictMode>
 );
 

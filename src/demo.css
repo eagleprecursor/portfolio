@@ -1,0 +1,377 @@
+.demo-header-image.backwoods {
+    background-image: url(/public/images/h5/maps/backwoods.jpg);
+}
+
+.demo-header-image.ghoul-town {
+    background-image: url(/public/images/h5/maps/ghoul-town.jpg);
+}
+
+.demo-header-image {
+    flex: 1;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: background-image 1s;
+}
+
+.demo-header-image-wrapper {
+    display: flex;
+    height: 340px;
+    margin: -25px -40px;
+    margin-bottom: 0;
+}
+
+div#demo-wrapper {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.demo-header-image-vignette {    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.demo-header-image-title-wrapper {
+    z-index: 2;
+    display: flex;
+    width: 1175px;
+    align-items: flex-end;
+    margin-left: 55px;
+    margin-bottom: 5px;
+}
+
+div#demo-content {
+    margin-top: -16px;
+}
+
+#demo-content section.dark-bg {
+    padding-top: 16px;
+}
+
+#demo-content button.expand-row {
+    cursor: pointer;
+}
+
+.text-content {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.stat-tracker-mod-row a:link, .stat-tracker-mod-row a:visited {
+    color: #eee;
+}
+.stat-tracker-mod-row.top-3.pos-1 a:link, .stat-tracker-mod-row.top-3.pos-1 a:visited {
+    color: #002f44;
+}
+.stats-tracker-panels > div {
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+    border-bottom: 1px solid #3e3e3e;
+    font-size: 18px;
+}
+
+.options-panels > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
+
+.options-panels .panel-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.stats-tracker-panels .buttons button, .stats-tracker-panels .buttons span {
+    transition: background .4s;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin: 6px 10px 6px 0;
+    display: inline-block;
+    box-shadow: 0 0 2px 0 #aaa;
+    padding: 5px 10px;
+    position: relative;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.pages-wrapper.buttons button.selected, .stats-tracker-panels .buttons span:hover {
+    background: #169fce;
+    color: white;
+    border-color: #000;
+    box-shadow: none;
+}
+
+.stats-tracker-panels .buttons span:hover {
+    background-color: maroon;
+}
+
+.stats-tracker-panels label {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.colorpicker-advancer, .stats-tracker-panels input, .react-date-picker__wrapper {
+    transition: background .4s;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin: 6px 10px 6px 0;
+    display: inline-block;
+    box-shadow: 0 0 2px 0 #aaa;
+    padding: 5px 10px;
+    position: relative;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.stats-tracker-panels input, .react-date-picker__wrapper {
+    background: #1a1a1a;
+    text-align: left;
+    cursor: text;
+    flex: 1;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font: 15px "Nunito", Segoe UI;
+}
+
+.pos-1 .spinner-wrapper .spinner.arrow:after, .pos-2 .spinner-wrapper .spinner.arrow:after {
+    border-color: rgba(0, 0, 0, .5);
+}
+
+.column-selector-rows *:not(.last-row) .panel:nth-child(1):last-child {
+    flex: 0;
+}
+.column-selector-rows .panel:nth-child(1):last-child button {
+    padding-right: 50px;
+}
+
+#demo-wrapper .column-selector-rows .panel > button {
+    cursor: pointer;
+}
+
+.column-selector-rows .panel a {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.column-selector-rows *:not(.fourth-row) .panel a {
+    padding: 15px;
+}
+
+.column-selector-rows .last-row .panel {
+    max-width: 200px;
+    flex: auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.stat-tracker-mod-rows {
+    transition: all .4s;
+}
+
+.stat-tracker-mod-rows:hover .highlight-on-hover {
+    background: rgba(138, 212, 255, 0.3);
+    font-weight: bold;
+}
+
+.stat-tracker-mod-row:hover .grey-out-link {
+    transition: opacity .4s;
+    opacity: 0.6;
+}
+
+.stat-tracker-mod-rows:hover .disable-on-hover {
+    opacity: 0.8;
+}
+
+.stat-tracker-mod-rows .disable-on-hover {
+    transition: all .4s;
+}
+
+.stat-tracker-mod-row a:hover, .stat-tracker-mod-row a:focus {
+    color: #79dfff;
+}
+
+.flex-align-top {
+    display: flex;
+    align-items: flex-start;
+}
+article.player-summary {
+    margin: 15px 15px 15px 25px;
+}
+
+section.tabs-with-links ul.react-tabs__tab-list {
+    display: flex;
+}
+
+section.tabs-with-links .react-tabs {
+    max-width: unset;
+    text-align: left;
+}
+
+.react-tabs .react-tabs .react-tabs__tab--selected {
+    border-bottom-color: #ff8549;
+}
+
+.react-tabs .react-tabs .react-tabs__tab--selected, .react-tabs .react-tabs .react-tabs__tab:hover, .react-tabs .view-options .option.selected, .react-tabs .view-options .option:hover {
+    color: #ff8549;
+}
+
+.react-tabs .react-tabs .react-tabs__tab {
+    padding: 10px 10px 8px;
+    font-size: 20px;
+}
+
+.profile-section-header, .profile-section-subheader {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.profile-section-header p, .profile-section-subheader p {
+    display: inline-block;
+    border-bottom: 1px solid #999;
+}
+
+.content-margin {
+    margin: 10px;
+}
+
+.profile-stats span.weapon-halo5 {
+    height: 100px;
+    margin-left: 5px;
+    display: block;
+}
+
+span.weapon-halo5 img {
+    height: inherit;
+}
+
+.weapons-stats span.profile-stats {
+    width: 24%;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weapons-stats .profile-stats.top-1, .weapons-stats .profile-stats.top-2, .weapons-stats .profile-stats.top-3 {
+    background-size: contain;
+    background-color: rgb(255 255 255 / 5%);
+    padding: 0;
+    margin-top: 10px;
+}
+.weapons-stats .profile-stats.top-2 .weapon-halo5 ~ span {
+    background: rgba(211, 211, 211, 0.8);
+    margin-top: 10px;
+    width: 100%;
+}
+.weapons-stats .profile-stats.top-1 > span, .weapons-stats .profile-stats.top-2 > span, .weapons-stats .profile-stats.top-3 > span {
+    padding: 10px;
+}
+.weapons-stats .profile-stats.top-3 .weapon-halo5 ~ span {
+    background: rgba(205, 127, 50, 0.8);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.weapons-stats span.profile-stats.top-1::after, .weapons-stats span.profile-stats.top-2::after, .weapons-stats span.profile-stats.top-3::after {
+    color: white;
+}
+
+#demo-wrapper .panels > div {
+    margin-bottom: 15px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.profile-stats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#demo-wrapper .main-stats-wrapper span.profile-stats {
+    width: 49%;
+}
+
+@media (min-width: 2000px) {
+    #demo-wrapper .main-stats-wrapper span.profile-stats {
+        width: 33%;
+    }
+}
+
+.rating-bar.platinum:hover .rating-bar-inner, .awarded-badge.platinum .badge-details, .awarded-badge.platinum:hover {
+    background-color: rgba(229, 228, 226, 1);
+    color: black;
+}
+
+.rating-bar.silver:hover .rating-bar-inner, .awarded-badge.silver .badge-details, .awarded-badge.silver:hover {
+    background-color: rgba(211, 211, 211, 1);
+    color: black;
+}
+
+.checkbox-select-option, .notification-preference-option {
+    box-shadow: 0 0 2px 0 #aaa;
+    border: 1px solid #888;
+    width: 20px;
+    transition: all .3s;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+span.flex.flex-align-left {
+    justify-content: flex-start;
+}
+
+.checkbox-select-option.selected, .notification-preference-option.selected {
+    background-color: #2AFF00;
+}
+
+.checkbox-select-option.selected:after, .notification-preference-option.selected:after {
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+span.positive-progress, span.negative-progress, span.record-deductions {
+    color: #00b500;
+    font-size: 14px;
+    font-weight: 600;
+}
+span.negative-progress, span.record-deductions {
+    color: red;
+}
+.date-col {
+    flex: 1;
+}

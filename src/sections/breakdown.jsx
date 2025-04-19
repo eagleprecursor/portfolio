@@ -7,6 +7,7 @@ import { faIdBadge } from "@fortawesome/free-regular-svg-icons";
 import { ProgressTracker } from "../data/progress-chart-2";
 import ProfileRadar from "../_progress/radar-chart";
 import { RadarChart } from "../data/radar-chart-1";
+import { Link } from "react-router";
 
 const LeaderboardSnippet = () => {
 
@@ -15,7 +16,7 @@ const LeaderboardSnippet = () => {
     return (
         <section className='leaderboard-overview'>
             <h2>Leaderboards</h2> 
-            <p>A Leaderboard is a list of player stats ordered by a specific column in descending order. Every stats column in a <b>Player Data table</b> (Big Data stats table) is stored as an number, but can have a different type affecting how it is displayed. For example: A duration column is compared by it's value, but displayed as minutes and seconds.</p>
+            <p>A Leaderboard is a list of stats ordered by a specific column in descending order. All these stats are stored as numbers for comparison, but can be displayed however intended.<br /><i>For example: A duration column is compared by it's value, but displayed as minutes and seconds.</i></p>
             <div className="stat-tracker-player-data">
                 <div class="stat-tracker-mod-col-header stat-tracker-mod-row">
                     <div class="position-col"><span>#</span></div>
@@ -276,7 +277,7 @@ const LeaderboardSnippet = () => {
                     </div>
                 </div>
             </div>
-            <p>The <b>Rating</b> column type is a number that is converted to a name with tiers/categories depending on the value. For my Halo 5 proof-of-concept implementation, I created a Rating for Infection with tiers named after Arena Ranks in Halo 5: Guardians (Bronze-Onyx and Champion) and used this as the main order column.</p><p>Any column about stats can be used to order the Leaderboard, even ratios of columns, for example: K/D (Kills/Deaths). Ratios of columns aren't stored in the big-data table, they are Virtual Columns (as opposed to Stored Columns) generated only when needed.</p>
+            <p>The <b>Rating</b> column type is one I created that converts a rating number into a name with tiers/categories.<br /><i>When creating the original website for Halo 5, I created a Rating system for Infection based on the ranked system (Bronze-Onyx and Champion).</i></p><p>Any stats column can be used to make a Leaderboard, including ratios of columns (for example: K/D, Kills/Deaths) which are generated only when needed.</p>
             <div className="overview-highlight-row">
                 <section className="info">
                     <h4>Headers</h4>
@@ -583,8 +584,8 @@ const MedalsDisplay = () => (
         <div className="overview-highlight-row second">
             <section className="info">
                 <h4>Medals by Category: Weapon Profiency</h4>
-                <p>Any medals that a player has not earned can also be tracked, either showing as un-earned or completely hidden.</p>
-                <p>Using Laravel resources, additional data about each column is returned (in this case, the "per-game" value, which is calculated in code, not in the database query).</p>
+                <p>Any medals that a player has not earned can also be tracked, either showing as un-earned or completely hidden.<br />
+                <i>In this example, additional data about each column is returned (in this case, the "per-game" value, calculated as <b>column / games played</b>).</i></p>
             </section>
             <div class="profile-stats-wrapper">
                 <span class="profile-stats">
@@ -994,27 +995,26 @@ const ComparingPlayers = () => (
     </>
 )
 
-const TechCVSection = () => (
+const StatsTrackerBreakdown = () => (
     <div className='flex flex-down'>
         <section className='project-overview'>
             <h1>Gaming Stats Tracker and Leaderboards project</h1>
             <h3>2021 - Now</h3>
-            <b><u>Halo 5 Infection Leaderboard</u></b>
-            <p>The Halo 5 Infection Leaderboard was a project I developed for players to view their Infection stats, and to see where they ranked on the Leaderboard against other players.</p>
-            <p>This project started as a single page website with only one Leaderboard (player score) to a website that tracked over 100 different stats for <b>50K+ players</b> as well as almost <b>1 Million match results</b> (games played). Players could use a progress tracker to view how their stats changed over time, and a games viewer to display detailed stats from a match result.</p>
+            <p>The Stats Tracker started out as a simple project to track stats and provide a Leaderboard for players in Halo 5: Guardians's Infection game mode. This worked perfect for me as a side project in University as the community was quite large and as such the website had active users who could suggest extra features and provide feedback. The Infection game mode in Halo is one of the social playlists, and therefore no rank/score/skill rating (called <b>TrueSkill</b> in ranked Halo) exists for players, leading me to develop a Rating system based on performance over time which served as the default Leaderboard for the site.</p> 
+            <p>At the peak this website stored data for around <b>50K+ players</b> as well as almost <b>1 Million match results</b> (games played).</p>
             <b><u>Motivation for the Gaming Stats Tracker</u></b>
-            <p>In the old system, what I called the <b>Records Portal</b> (Leaderboard for matches played) used a different codebase to the Leaderboard for player stats. The matches played Leaderboard was only able to show the highest scoring game (the record) for each map. My aspiration for Version 4 was for matches played to use the same Leaderboard system as player stats, allowing for example: A Leaderboard showing the Top 50 scores for a map, A Leaderboard showing the Top 10 Shortest matches played, etc.</p>
-            <p>My Gaming Stats Tracker realizes this vision. In it's current state (v1.0 alpha), the system can generate a Leaderboard from any <b>Big Data table</b> of player stats data.</p>
-            <p>To show off how the system works, I build a proof-of-concept website that uses it for Halo 5 with the old stats data I had backed up from the Infection Leaderboard website before I took it offline.</p>
+            <p>The original project had 2 Leaderboards: the first for Player Stats, and the other for highest scoring Games. The highest scoring games page (which I named Records Portal) displayed per-map which player had earned the highest number of kills. These two Leaderboards used different codebases and it was difficult to add new columns to Leaderboards (i.e. for a new Stat added to the game later on).</p>
+            <p>My new project simplifies the old codebase by providing an interface to turn any <b>big data table</b> of player stats into a Leaderboard.<br />This allows for such Leaderboards as: <b>Games: </b>Top 15 shortest games played, Top 15 most kills per map, <b>Stats: </b>Top 15 best players for Kills, Top 50 for Win % (stored virtually, calculated using wins/games), and etc.</p>
+            <p>All sections below show data from the Halo 5 project rebuilt using the Stats Tracker, which you can view on the <Link to="/">demo page</Link>.</p>
             <LeaderboardSnippet />
             <h2>Player Data - Stats Overview, Badges, Progress Tracker</h2>
-            <p>All of the stats that are stored about players for a game can be used to build profile pages (a stats overview / service record) for each player, giving a breakdown of their stats by category, as well as showing their Leaderboard position for each. The Leaderbord API supports <b>"showing" players</b> for any given order column by calculating the player's position for it and using it to find the page they are on. The frontend system can then navigate to that page, and scroll to the player on it.</p>
+            <p>All of a players stats can be used to build profile pages (a stats overview / service record) for each player, giving a breakdown of their stats by category, as well as showing their Leaderboard position for each. The Leaderbord API supports <b>"showing" players</b> for any given order column by calculating the player's position for it and using it to find the page they are on. The frontend system can then navigate to that page, and scroll to the player on it.</p>
             <h3>Stats Overview: Examples from Halo 5 players</h3>
             <p>Stats columns can be categorized by multiple criteria within the API. In Halo 5, most stats are categorized by their type and optional sub-category. For example, a Medal is a type of stat that can be earned in-game which has an image and description. Each medal also has a sub-category, describing what kind of medal that it is.</p>
             <MedalsDisplay />
             <StatsDisplay />
             <h3>Badges</h3>
-            <p>Player Badges within the Stats Tracker are accolades that can be given/awarded to players when they meet a certain criteria within the game. The most simple type of badge works on a single column in a single player data table. More complicated badges that use multiple columns and multiple criteria can also be created. Badges can be given custom images, or derive their image from the column's metadata (for a medal this would be the Medal Image). When a player updates their stats within the stat tracker, their stats will be evaluated against all the badges to see if they meet the criteria for them.</p>
+            <p>Player Badges within the Stats Tracker are accolades that can be given/awarded to players when they meet a certain criteria within the game. The most simple type of badge works on a single stat. More complicated badges that use multiple columns and multiple criteria can also be created. Badges can be given custom images, or derive their image from the column's metadata (for a medal this would be the Medal Image). When a player updates their stats within the stat tracker, their stats will be evaluated against all the badges to see if they meet the criteria for them.</p>
             <h4>Example Badges:</h4>
             <div className="badge-overview">
                 <section className="info">
@@ -1104,7 +1104,7 @@ const TechCVSection = () => (
                 </div>
             </div>
             <h3>Progress Tracker</h3>
-            <p>Just like Leaderboards, the progress tracker can be shown for all of the different player stats that are tracked. Users are able to choose the stat they want to view progress for by using the column selector, and then view their progress over time by either using a list of rows or a group of line charts. Just like Leaderboards, the chosen column can be used to get any data for additional relevant columns.</p>
+            <p>Just like Leaderboards, the system supports a progress tracker for players to view how their stats have changed over time. They can choose the stat they want to view progress for by using the column selector, and then view the result either using a list of rows or a group of line charts. Just like Leaderboards, the chosen column can be used to get any data for additional relevant columns.</p>
             <section className="dark-bg" style={{ marginBottom: "15px" }}>
                 <div class="options-panels"><div class="left-panels"><div class="column-selector panel-wrapper"><label class="panel-header">Select Order</label><div class="panel"><span class="panel-text">Killionaire</span><button class="expand-row spinner-wrapper small showing"><span class="spinner arrow up-arrow"></span></button></div></div></div></div>
                 <div class="column-selector-rows"><div class="second-row"><div class="panel"><button class="expand-row spinner-wrapper small showing">Main<span class="spinner arrow"></span></button></div><div class="panel selected"><button class="expand-row spinner-wrapper small showing">Medals<span class="spinner arrow up-arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Miscellaneous<span class="spinner arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Rating<span class="spinner arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Ratios<span class="spinner arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Weapons<span class="spinner arrow"></span></button></div></div><div class="third-row"><div class="panel"><button class="expand-row spinner-wrapper small showing">Infection<span class="spinner arrow"></span></button></div><div class="panel selected"><button class="expand-row spinner-wrapper small showing">MultiKill<span class="spinner arrow up-arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Style<span class="spinner arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">Vehicles<span class="spinner arrow"></span></button></div><div class="panel"><button class="expand-row spinner-wrapper small showing">WeaponProficiency<span class="spinner arrow"></span></button></div></div><div class="fourth-row last-row"><div class="panel"><b>Double Kill</b></div><div class="panel"><b>Killamanjaro</b></div><div class="panel selected"><b>Killionaire</b></div><div class="panel"><b>Killpocalypse</b></div><div class="panel"><b>Killtacular</b></div><div class="panel"><b>Killtastrophe</b></div><div class="panel"><b>Killtrocity</b></div><div class="panel"><b>Overkill</b></div><div class="panel"><b>Triple Kill</b></div></div></div>
@@ -1119,58 +1119,10 @@ const TechCVSection = () => (
         
         <section className='project-overview no-border'>
             <h1>Halo 5 Stats Tracker: Comparing Players</h1>
-            <p>Using the stats stored for 2 players in the Infection stats player data table, I implemented a player comparison page on the Halo 5 stats tracker. This page acts as a profile page for both players, showing all the stats that they both have, and displaying the winner for each between the two.</p>
+            <p>Using the stats stored for 2 players, I implemented a player comparison page on the Halo 5 stats tracker. This page shows all the stats that they both have, and displays the winner for each between the two.</p>
             <ComparingPlayers />
         </section> 
-
-        <section className="white-section">
-            <section className='project-overview'>
-                <h1 style={{ fontSize: "1.5em" }}>Halo 5 Infection Leaderboard</h1>
-                <h3>2018 - 2021</h3>
-                <p>As previously detailed, the Halo 5 Infection Leaderboard was a project I developed for players to view their Infection stats, and to see where they ranked on the Leaderboard against other players.</p>
-                <p>This section will only list features of the project that I have not yet included within the Stats Tracker.</p>
-                <h2>Matches Leaderboard (Records Portal)</h2>
-                <p>The old version of the Halo 5 Leaderboard website included a Matches played Leaderboard (named Records Portal), a collage of the highest scores achieved on every map in the game.</p>
-                <p>As I described above, one of the main motivations for building the Stats Tracker was the ability to change the "Match History" big data table into a player data table like player stats, allowing a Leaderboard for all stats earnable in games (e.g. Highest score per map, Highest Kills per map, Highest Deaths per map etc.), and create a progress tracker to see the Records over time for each map.</p>
-                <p>I have not implemented this Leaderboard in the Halo 5 version of my new Stats Tracker as I no longer have access to the data about player's match history.</p>
-                <p>This screenshot shows an example of how the Records Portal used to appear: With the map photo, map name, record holders name and the score for the record game.</p>
-                <img src="/images/records-portal.png" style={{ maxWidth: "1400px", width: "100%", padding: "5px", border: "1px solid", }}/>
-                <h2>Games Viewer</h2>
-                <p>The old version of the website also had a page to view a Match Result from the Match History table, called a Game on the website. This page was very similar to the profile stats overview page in the Stats Tracker, but for the game rather than a single player. The stats from the "perspective" of the winner were shown, but the game could be loaded from a different perspective to view someone else's stats from that game.</p>
-                <p>This screenshot shows an example of how the Games viewer for a Match result used to appear: With the stats, a radar graph of all players killed by the perspective player, and medals earned by that player.</p>
-                <img src="/images/games-viewer-white.png" style={{ maxWidth: "1400px", width: "100%", padding: "5px", border: "1px solid", marginBottom: "20px" }}/>
-            </section>
-        </section>
-
-        <h1 className="big-header">CS Work and Study Experience</h1>
-
-        <section className='cv-list'>
-            <h1><span className='title'>Web Development Intern – MyKnowledgeMap</span><span className='location'>York, UK</span></h1>
-            <h3>October 2020 – June 2021, <i>July – August 2019</i></h3>
-            <p className='skills-list'><b>Skills Developed:</b> Web Development, Unit Testing, Team Working, WCAG 2.1, Git, Angular.js, React.js, Redux.js</p>
-            <ul>
-                <li>Gained experienced working with different web technologies such as React.js, Redux.js and Angular.js whilst implementing accessibility changes and testing for and fixing errors/bugs in the company projects to help them meet the Web Content Accessibility Guidelines (WCAG 2.1)</li>
-                <li>Learned how to maintain and improve codebase for working projects by reducing the amount of code duplication, and improving consistency between pages</li>
-                <li>Developed skills in collaborating with other members of the team to test changes for a major project release, as well as skills in Unit Testing and using libraries like Headless Chrome to identify and fix issues.</li>
-                <li>Modelled a prototype for an interactive book that the company wanted to develop into a future product</li>
-            </ul>
-            <h1><span className="title">Computer Science BSc</span><span className="location">Newcastle University, UK</span></h1>
-            <h3>September 2017 – July 2020</h3>
-            <ul>
-                <li>Graduated with a 2:1 and the following modules scored 70% or higher</li>
-                <ul>
-                    <li>Programming 1 - 75%</li>
-                    <li>Programming 2 - 79%</li>
-                    <li>Website Design and Construction - 71%</li>
-                    <li>Computer Networks - 72%</li>
-                    <li>Project and Dissertation in Computing Science - 70%</li>
-                    <li>System and Network Security - 84%</li>
-                    <li>Gaming Simulations - 81%</li>
-                    <li>Understanding Programming Languages - 80%</li>
-                </ul>
-            </ul>
-        </section>
     </div>
 );
 
-export default TechCVSection;
+export default StatsTrackerBreakdown;

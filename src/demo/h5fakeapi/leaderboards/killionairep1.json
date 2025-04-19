@@ -1,0 +1,657 @@
+{
+    "order": {
+        "name": "Killionaire",
+        "slug": "killionaire",
+        "category": "Medals",
+        "subcategory": "MultiKill"
+    },
+    "pages": {
+        "name": "page",
+        "page": "1",
+        "lastPage": 100
+    },
+    "options": {
+        "lb-per-page": "15",
+        "historical": 0,
+        "min-games": 50
+    },
+    "defaultOrder": {
+        "name": "Rating",
+        "slug": "rating"
+    },
+    "headers": [
+        {
+            "name": "Killionaire",
+            "slug": "killionaire",
+            "category": "Medals",
+            "subcategory": "MultiKill"
+        },
+        {
+            "name": "Killionaire \/ Games Played",
+            "slug": "killionaire\/games-played",
+            "ratio": true,
+            "disabled": true,
+            "numerator": {
+                "name": "Killionaire",
+                "slug": "killionaire",
+                "category": "Medals",
+                "subcategory": "MultiKill"
+            },
+            "denominator": {
+                "name": "Games Played",
+                "slug": "games-played"
+            }
+        },
+        {
+            "name": "Rating",
+            "slug": "rating"
+        },
+        {
+            "name": "Games Played",
+            "slug": "games-played"
+        }
+    ],
+    "rows": [
+        {
+            "position": 1,
+            "row": {
+                "account": {
+                    "gamertag": "Surfin Neptune",
+                    "slug": "surfin-neptune",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 6759,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.74,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 218314,
+                            "name": "Onyx 5",
+                            "percentage": 76.63,
+                            "nextRating": "Onyx 6",
+                            "distance": 11686
+                        },
+                        "Games Played": {
+                            "value": 9136,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 2,
+            "row": {
+                "account": {
+                    "gamertag": "Rhegrets",
+                    "slug": "rhegrets",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 3949,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.35,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 218159,
+                            "name": "Onyx 5",
+                            "percentage": 76.32,
+                            "nextRating": "Onyx 6",
+                            "distance": 11841
+                        },
+                        "Games Played": {
+                            "value": 11336,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 3,
+            "row": {
+                "account": {
+                    "gamertag": "Kylo Renegade14",
+                    "slug": "kylo-renegade14",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 3382,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.31,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 228235,
+                            "name": "Onyx 5",
+                            "percentage": 96.47,
+                            "nextRating": "Onyx 6",
+                            "distance": 1765
+                        },
+                        "Games Played": {
+                            "value": 11054,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 4,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Perdition",
+                    "slug": "eagle-perdition",
+                    "profile": {
+                        "images": {
+                            "spartan": "/images/h5/spartan-eagle2.png",
+                            "emblem": "/images/h5/image-eagle2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 12, 2024",
+                    "data": {
+                        "Killionaire": {
+                            "value": 3148,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.68,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 192831,
+                            "name": "Onyx 5",
+                            "percentage": 25.66,
+                            "nextRating": "Onyx 6",
+                            "distance": 37169
+                        },
+                        "Games Played": {
+                            "value": 4614,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 5,
+            "row": {
+                "account": {
+                    "gamertag": "Cyberkmus Cx",
+                    "slug": "cyberkmus-cx",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 25, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 3116,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.2,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 198074,
+                            "name": "Onyx 5",
+                            "percentage": 36.15,
+                            "nextRating": "Onyx 6",
+                            "distance": 31926
+                        },
+                        "Games Played": {
+                            "value": 15362,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 6,
+            "row": {
+                "account": {
+                    "gamertag": "Shnugly",
+                    "slug": "shnugly",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2812,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.5,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 175098,
+                            "name": "Onyx 4",
+                            "percentage": 87.75,
+                            "nextRating": "Onyx 5",
+                            "distance": 4902
+                        },
+                        "Games Played": {
+                            "value": 5651,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 7,
+            "row": {
+                "account": {
+                    "gamertag": "Ragingfury555",
+                    "slug": "ragingfury555",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jan 23, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2729,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.28,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 221073,
+                            "name": "Onyx 5",
+                            "percentage": 82.15,
+                            "nextRating": "Onyx 6",
+                            "distance": 8927
+                        },
+                        "Games Played": {
+                            "value": 9689,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 8,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Precursor",
+                    "slug": "eagle-precursor",
+                    "link": true,
+                    "profile": {
+                        "images": {
+                            "spartan": "/images/h5/spartan-eagle.png",
+                            "emblem": "/images/h5/image-eagle.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 4, 2024",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2612,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.33,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        },
+                        "Games Played": {
+                            "value": 7945,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 9,
+            "row": {
+                "account": {
+                    "gamertag": "cyberkmus",
+                    "slug": "cyberkmus",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Mar 20, 2020",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2605,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.21,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 183881,
+                            "name": "Onyx 5",
+                            "percentage": 7.76,
+                            "nextRating": "Onyx 6",
+                            "distance": 46119
+                        },
+                        "Games Played": {
+                            "value": 12317,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 10,
+            "row": {
+                "account": {
+                    "gamertag": "iKakony",
+                    "slug": "ikakony",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-4.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2564,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.21,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 215608,
+                            "name": "Onyx 5",
+                            "percentage": 71.22,
+                            "nextRating": "Onyx 6",
+                            "distance": 14392
+                        },
+                        "Games Played": {
+                            "value": 12127,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 11,
+            "row": {
+                "account": {
+                    "gamertag": "Em3raldArch3r1",
+                    "slug": "em3raldarch3r1",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Mar 8, 2020",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2272,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.21,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 181283,
+                            "name": "Onyx 5",
+                            "percentage": 2.57,
+                            "nextRating": "Onyx 6",
+                            "distance": 48717
+                        },
+                        "Games Played": {
+                            "value": 10970,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 12,
+            "row": {
+                "account": {
+                    "gamertag": "S Crlzzly S",
+                    "slug": "s-crlzzly-s",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jan 20, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2265,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.27,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 169239,
+                            "name": "Onyx 4",
+                            "percentage": 73.1,
+                            "nextRating": "Onyx 5",
+                            "distance": 10761
+                        },
+                        "Games Played": {
+                            "value": 8378,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 13,
+            "row": {
+                "account": {
+                    "gamertag": "xZxotic",
+                    "slug": "xzxotic",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2127,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.23,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 170354,
+                            "name": "Onyx 4",
+                            "percentage": 75.89,
+                            "nextRating": "Onyx 5",
+                            "distance": 9646
+                        },
+                        "Games Played": {
+                            "value": 9328,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 14,
+            "row": {
+                "account": {
+                    "gamertag": "Exoticxzy",
+                    "slug": "exoticxzy",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-4.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Sep 10, 2019",
+                    "data": {
+                        "Killionaire": {
+                            "value": 2029,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.23,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 166892,
+                            "name": "Onyx 4",
+                            "percentage": 67.23,
+                            "nextRating": "Onyx 5",
+                            "distance": 13108
+                        },
+                        "Games Played": {
+                            "value": 8879,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 15,
+            "row": {
+                "account": {
+                    "gamertag": "Xx LXZT xX",
+                    "slug": "xx-lxzt-xx",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jan 15, 2021",
+                    "data": {
+                        "Killionaire": {
+                            "value": 1946,
+                            "slug": "killionaire"
+                        },
+                        "Killionaire \/ Games Played": {
+                            "value": 0.42,
+                            "slug": "killionaire-games-played"
+                        },
+                        "Rating": {
+                            "value": 145465,
+                            "name": "Onyx 4",
+                            "percentage": 13.66,
+                            "nextRating": "Onyx 5",
+                            "distance": 34535
+                        },
+                        "Games Played": {
+                            "value": 4660,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        }
+    ]
+}

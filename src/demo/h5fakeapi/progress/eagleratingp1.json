@@ -1,0 +1,525 @@
+{
+    "player": {
+        "gamertag": "Eagle Precursor",
+        "slug": "eagle-precursor",
+        "profile": {
+            "images": {
+                "spartan": "/images/h5/spartan-eagle.png",
+                "emblem": "/images/h5/image-eagle.png"
+            }
+        }
+    },
+    "progress": {
+        "column": {
+            "name": "Rating",
+            "slug": "rating"
+        },
+        "pages": {
+            "name": "page",
+            "page": "1",
+            "lastPage": 1
+        },
+        "options": {
+            "simple": false,
+            "per-page": 10,
+            "chart-data": true,
+            "progress": "1",
+            "gamertag": "eagle-precursor"
+        },
+        "headers": [
+            {
+                "name": "Rating",
+                "slug": "rating"
+            },
+            {
+                "name": "K\/D",
+                "slug": "kd-ratio",
+                "disabled": true,
+                "ratio": true,
+                "numerator": {
+                    "name": "Kills",
+                    "slug": "kills"
+                },
+                "denominator": {
+                    "name": "Deaths",
+                    "slug": "deaths"
+                }
+            },
+            {
+                "name": "Kills per Game",
+                "slug": "kg-ratio",
+                "disabled": true,
+                "ratio": true,
+                "numerator": {
+                    "name": "Kills",
+                    "slug": "kills"
+                },
+                "denominator": {
+                    "name": "Games Played",
+                    "slug": "games-played"
+                }
+            },
+            {
+                "name": "Win %",
+                "slug": "win-percent",
+                "disabled": true,
+                "ratio": true,
+                "numerator": {
+                    "name": "Games Won",
+                    "slug": "games-won"
+                },
+                "denominator": {
+                    "name": "Games Played",
+                    "slug": "games-played"
+                }
+            },
+            {
+                "name": "Games Played",
+                "slug": "games-played",
+                "disabled": true
+            }
+        ],
+        "rows": [
+            {
+                "stats": {
+                    "date": "Nov 4, 2024",
+                    "data": {
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        },
+                        "K\/D": {
+                            "value": 4.69,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.33,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 57.73,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7945,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 205551,
+                        "name": "Onyx 5",
+                        "percentage": 51.1,
+                        "nextRating": "Onyx 6",
+                        "distance": 24449,
+                        "difference": 0
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0,
+                    "Win %": 0,
+                    "Games Played": 0
+                }
+            },
+            {
+                "stats": {
+                    "date": "Oct 22, 2024",
+                    "data": {
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        },
+                        "K\/D": {
+                            "value": 4.69,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.33,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 57.73,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7945,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204724,
+                        "name": "Onyx 5",
+                        "percentage": 49.45,
+                        "nextRating": "Onyx 6",
+                        "distance": 25276,
+                        "difference": 827
+                    },
+                    "K\/D": -0.07,
+                    "Kills per Game": -0.28,
+                    "Win %": -0.92,
+                    "Games Played": 195
+                }
+            },
+            {
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 204724,
+                            "name": "Onyx 5",
+                            "percentage": 49.45,
+                            "nextRating": "Onyx 6",
+                            "distance": 25276
+                        },
+                        "K\/D": {
+                            "value": 4.76,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.61,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.65,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7750,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204721,
+                        "name": "Onyx 5",
+                        "percentage": 49.44,
+                        "nextRating": "Onyx 6",
+                        "distance": 25279,
+                        "difference": 3
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0,
+                    "Win %": 0,
+                    "Games Played": 1
+                }
+            },
+            {
+                "stats": {
+                    "date": "Feb 27, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 204721,
+                            "name": "Onyx 5",
+                            "percentage": 49.44,
+                            "nextRating": "Onyx 6",
+                            "distance": 25279
+                        },
+                        "K\/D": {
+                            "value": 4.76,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.61,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.65,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7749,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204692,
+                        "name": "Onyx 5",
+                        "percentage": 49.38,
+                        "nextRating": "Onyx 6",
+                        "distance": 25308,
+                        "difference": 29
+                    },
+                    "K\/D": -0.01,
+                    "Kills per Game": 0,
+                    "Win %": -0.05,
+                    "Games Played": 8
+                }
+            },
+            {
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 204692,
+                            "name": "Onyx 5",
+                            "percentage": 49.38,
+                            "nextRating": "Onyx 6",
+                            "distance": 25308
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.61,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.7,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7741,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204494,
+                        "name": "Onyx 5",
+                        "percentage": 48.99,
+                        "nextRating": "Onyx 6",
+                        "distance": 25506,
+                        "difference": 198
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": -0.02,
+                    "Win %": -0.1,
+                    "Games Played": 27
+                }
+            },
+            {
+                "stats": {
+                    "date": "Jan 12, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 204494,
+                            "name": "Onyx 5",
+                            "percentage": 48.99,
+                            "nextRating": "Onyx 6",
+                            "distance": 25506
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.63,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.8,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7714,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204468,
+                        "name": "Onyx 5",
+                        "percentage": 48.94,
+                        "nextRating": "Onyx 6",
+                        "distance": 25532,
+                        "difference": 26
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0,
+                    "Win %": 0,
+                    "Games Played": 1
+                }
+            },
+            {
+                "stats": {
+                    "date": "Jan 3, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 204468,
+                            "name": "Onyx 5",
+                            "percentage": 48.94,
+                            "nextRating": "Onyx 6",
+                            "distance": 25532
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.63,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.8,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7713,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204312,
+                        "name": "Onyx 5",
+                        "percentage": 48.62,
+                        "nextRating": "Onyx 6",
+                        "distance": 25688,
+                        "difference": 156
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0.06,
+                    "Win %": -0.04,
+                    "Games Played": 11
+                }
+            },
+            {
+                "stats": {
+                    "date": "Dec 24, 2020",
+                    "data": {
+                        "Rating": {
+                            "value": 204312,
+                            "name": "Onyx 5",
+                            "percentage": 48.62,
+                            "nextRating": "Onyx 6",
+                            "distance": 25688
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.57,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.84,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7702,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204302,
+                        "name": "Onyx 5",
+                        "percentage": 48.6,
+                        "nextRating": "Onyx 6",
+                        "distance": 25698,
+                        "difference": 10
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": -0.01,
+                    "Win %": -0.03,
+                    "Games Played": 6
+                }
+            },
+            {
+                "stats": {
+                    "date": "Dec 12, 2020",
+                    "data": {
+                        "Rating": {
+                            "value": 204302,
+                            "name": "Onyx 5",
+                            "percentage": 48.6,
+                            "nextRating": "Onyx 6",
+                            "distance": 25698
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.58,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.87,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7696,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204278,
+                        "name": "Onyx 5",
+                        "percentage": 48.56,
+                        "nextRating": "Onyx 6",
+                        "distance": 25722,
+                        "difference": 24
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0,
+                    "Win %": 0,
+                    "Games Played": 1
+                }
+            },
+            {
+                "stats": {
+                    "date": "Dec 11, 2020",
+                    "data": {
+                        "Rating": {
+                            "value": 204278,
+                            "name": "Onyx 5",
+                            "percentage": 48.56,
+                            "nextRating": "Onyx 6",
+                            "distance": 25722
+                        },
+                        "K\/D": {
+                            "value": 4.77,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.58,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 58.87,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7695,
+                            "slug": "games-played"
+                        }
+                    }
+                },
+                "comparisons": {
+                    "Rating": {
+                        "value": 204280,
+                        "name": "Onyx 5",
+                        "percentage": 48.56,
+                        "nextRating": "Onyx 6",
+                        "distance": 25720,
+                        "difference": -2
+                    },
+                    "K\/D": 0,
+                    "Kills per Game": 0,
+                    "Win %": -0.02,
+                    "Games Played": 3
+                }
+            }
+        ]
+    }
+}

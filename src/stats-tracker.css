@@ -202,7 +202,7 @@ article.player-summary {
     margin-right: 10px;
 }
 
-.stat-tracker-mod-rows p {
+div#view-wrapper .stat-tracker-mod-rows p {
     margin: 6px 0;
     font-size: 15px;
 }
@@ -327,7 +327,8 @@ span.rating-title {
     left: 140px;
     z-index: 8;
 }
-.rating-numbers > p:first-of-type {
+
+div#view-wrapper .rating-numbers > p:first-of-type {
     font-size: 30px;
 }
 
@@ -352,6 +353,10 @@ span.rating-title {
 
 .rating-breakdown.rank-5 .rating-image:after, span.rank-5 .rating-bar-wrapper:after {
     content: '5';
+}
+
+.rating-breakdown.rank-6 .rating-image:after, span.rank-6 .rating-bar-wrapper:after {
+    content: '6';
 }
 
 .rating-image:after {
@@ -384,7 +389,7 @@ span.rating-title {
     font-weight: bold;
 }
 
-.stat-tracker-mod-row.low-opacity > * {
+.low-opacity > *, .row-data .low-opacity {
     opacity: .3;
 }
 
@@ -1004,4 +1009,60 @@ span.profile-stats.top-1 span.position-top100, span.profile-stats.top-2 span.pos
     .badge-overview {
         flex-direction: column;
     }
+}
+
+.top-3.pos-1 .rating-bar .rating-bar-wrapper:after, .rating-bar.diamond .rating-bar-wrapper:after, .rating-bar.platinum .rating-bar-wrapper:after, .rating-bar.silver .rating-bar-wrapper:after, .rating-bar.gold .rating-bar-wrapper:after {
+    color: rgba(0, 0, 0, .4);
+}
+
+span.rank-4 .rating-bar-wrapper:after {
+    content: '4';
+}
+span.rank-2 .rating-bar-wrapper:after {
+    content: '2';
+}
+span.rank-1 .rating-bar-wrapper:after {
+    content: '1';
+}
+.rating-bar.silver .rating-bar-inner, .awarded-badge.silver {
+    background-color: rgba(211, 211, 211, 0.65);
+}
+.rating-bar.platinum .rating-bar-inner, .awarded-badge.platinum {
+    background-color: rgba(229, 228, 226, 0.65);
+}
+
+.rating-breakdown.silver .rating-image, .rating-bar.silver:after {
+    background-image: url(/public/images/h5/silver-sheet.png);
+}
+
+.rating-breakdown.bronze .rating-image, .rating-bar.bronze:after {
+    background-image: url(/public/images/h5/bronze-sheet.png);
+}
+
+.rating-breakdown.platinum .rating-image, .rating-bar.platinum:after {
+    background-image: url(/public/images/h5/platinum-sheet.png);
+}
+
+.rating-breakdown.gold .rating-image, .rating-bar.gold:after {
+    background-image: url(/public/images/h5/gold-sheet.png);
+}
+
+.rating-bar.rank-6:after {
+    background-position: -580px -45px;
+}
+.rating-bar.rank-1:after {
+	background-position: -5px -45px;
+	background-repeat: no-repeat;
+}
+.rating-bar.rank-2:after {
+	background-position: -115px -45px;   
+}
+.rating-bar.rank-4:after {
+	background-position: 350px -45px;
+}
+.rating-bar.rank-5:after {
+	background-position: -462px -45px;
+}
+.rating-bar.onyx:after { 
+	background-position: -5px -45px;
 }

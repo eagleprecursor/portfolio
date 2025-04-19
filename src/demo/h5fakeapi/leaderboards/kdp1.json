@@ -1,0 +1,725 @@
+{
+    "order": {
+        "name": "K\/D",
+        "slug": "kd-ratio",
+        "ratio": true,
+        "numerator": {
+            "name": "Kills",
+            "slug": "kills"
+        },
+        "denominator": {
+            "name": "Deaths",
+            "slug": "deaths"
+        }
+    },
+    "pages": {
+        "name": "page",
+        "page": "1",
+        "lastPage": 100
+    },
+    "options": {
+        "lb-per-page": "15",
+        "historical": 0,
+        "min-games": 50
+    },
+    "defaultOrder": {
+        "name": "Rating",
+        "slug": "rating"
+    },
+    "headers": [
+        {
+            "name": "K\/D",
+            "slug": "kd-ratio",
+            "ratio": true,
+            "numerator": {
+                "name": "Kills",
+                "slug": "kills"
+            },
+            "denominator": {
+                "name": "Deaths",
+                "slug": "deaths"
+            }
+        },
+        {
+            "name": "Rating",
+            "slug": "rating"
+        },
+        {
+            "name": "Kills per Game",
+            "slug": "kg-ratio",
+            "ratio": true,
+            "numerator": {
+                "name": "Kills",
+                "slug": "kills"
+            },
+            "denominator": {
+                "name": "Games Played",
+                "slug": "games-played"
+            }
+        },
+        {
+            "name": "Win %",
+            "slug": "win-percent",
+            "ratio": true,
+            "numerator": {
+                "name": "Games Won",
+                "slug": "games-won"
+            },
+            "denominator": {
+                "name": "Games Played",
+                "slug": "games-played"
+            }
+        },
+        {
+            "name": "Games Played",
+            "slug": "games-played"
+        }
+    ],
+    "rows": [
+        {
+            "position": 1,
+            "row": {
+                "account": {
+                    "gamertag": "Ihsaac",
+                    "slug": "ihsaac",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Dec 6, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 20.47,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 30265,
+                            "name": "Platinum 3",
+                            "percentage": 92.58,
+                            "nextRating": "Platinum 4",
+                            "distance": 9735
+                        },
+                        "Kills per Game": {
+                            "value": 51.18,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 71.55,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 608,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 2,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Gemini",
+                    "slug": "eagle-gemini",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Aug 16, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 17.44,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 5482,
+                            "name": "Silver 3",
+                            "percentage": 48.2,
+                            "nextRating": "Silver 4",
+                            "distance": 3518
+                        },
+                        "Kills per Game": {
+                            "value": 71.25,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 89.83,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 118,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 3,
+            "row": {
+                "account": {
+                    "gamertag": "Thy Halo 3",
+                    "slug": "thy-halo-3",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-4.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Oct 7, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 14.22,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 40708,
+                            "name": "Diamond 1",
+                            "percentage": 12.14,
+                            "nextRating": "Diamond 2",
+                            "distance": 34292
+                        },
+                        "Kills per Game": {
+                            "value": 62.1,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 76.35,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 778,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 4,
+            "row": {
+                "account": {
+                    "gamertag": "Joyexz",
+                    "slug": "joyexz",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Apr 30, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 13.37,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 5572,
+                            "name": "Silver 3",
+                            "percentage": 57.2,
+                            "nextRating": "Silver 4",
+                            "distance": 3428
+                        },
+                        "Kills per Game": {
+                            "value": 65.63,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 87.7,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 122,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 5,
+            "row": {
+                "account": {
+                    "gamertag": "Kd Criminal",
+                    "slug": "kd-criminal",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jul 16, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 13.28,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 5534,
+                            "name": "Silver 3",
+                            "percentage": 53.4,
+                            "nextRating": "Silver 4",
+                            "distance": 3466
+                        },
+                        "Kills per Game": {
+                            "value": 45.01,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 80.6,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 134,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 6,
+            "row": {
+                "account": {
+                    "gamertag": "Thyrealjyrxz",
+                    "slug": "thyrealjyrxz",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jul 28, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 13.24,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 6700,
+                            "name": "Silver 4",
+                            "percentage": 70,
+                            "nextRating": "Silver 5",
+                            "distance": 2300
+                        },
+                        "Kills per Game": {
+                            "value": 52.62,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 68.52,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 162,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 7,
+            "row": {
+                "account": {
+                    "gamertag": "Thy Halo 2",
+                    "slug": "thy-halo-2",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jul 28, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 13.15,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 27811,
+                            "name": "Platinum 3",
+                            "percentage": 15.08,
+                            "nextRating": "Platinum 4",
+                            "distance": 12189
+                        },
+                        "Kills per Game": {
+                            "value": 56.75,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 72.64,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 541,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 8,
+            "row": {
+                "account": {
+                    "gamertag": "TKING ALlVE",
+                    "slug": "tking-allve",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Aug 10, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 12.85,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 12136,
+                            "name": "Gold 2",
+                            "percentage": 56.8,
+                            "nextRating": "Gold 3",
+                            "distance": 8864
+                        },
+                        "Kills per Game": {
+                            "value": 47.24,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 84,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 225,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 9,
+            "row": {
+                "account": {
+                    "gamertag": "Lll Vipxrzz Lll",
+                    "slug": "lll-vipxrzz-lll",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Dec 6, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 12.67,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 3316,
+                            "name": "Silver 1",
+                            "percentage": 31.6,
+                            "nextRating": "Silver 2",
+                            "distance": 5684
+                        },
+                        "Kills per Game": {
+                            "value": 61.64,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 89.77,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 88,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 10,
+            "row": {
+                "account": {
+                    "gamertag": "Clothlt",
+                    "slug": "clothlt",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 20, 2021",
+                    "data": {
+                        "K\/D": {
+                            "value": 12.21,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 46621,
+                            "name": "Diamond 2",
+                            "percentage": 13.5,
+                            "nextRating": "Diamond 3",
+                            "distance": 28379
+                        },
+                        "Kills per Game": {
+                            "value": 55.43,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 80.25,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 876,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 11,
+            "row": {
+                "account": {
+                    "gamertag": "KyloRenegade",
+                    "slug": "kylorenegade",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-5.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jan 19, 2021",
+                    "data": {
+                        "K\/D": {
+                            "value": 12.08,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 40839,
+                            "name": "Diamond 1",
+                            "percentage": 14.38,
+                            "nextRating": "Diamond 2",
+                            "distance": 34161
+                        },
+                        "Kills per Game": {
+                            "value": 62.65,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 94.17,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 652,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 12,
+            "row": {
+                "account": {
+                    "gamertag": "truly artful",
+                    "slug": "truly-artful",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jun 1, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 11.85,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 6472,
+                            "name": "Silver 4",
+                            "percentage": 47.2,
+                            "nextRating": "Silver 5",
+                            "distance": 2528
+                        },
+                        "Kills per Game": {
+                            "value": 56.02,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 60.84,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 166,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 13,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Anathema",
+                    "slug": "eagle-anathema",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 25, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 11.59,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 20635,
+                            "name": "Gold 6",
+                            "percentage": 81.75,
+                            "nextRating": "Platinum",
+                            "distance": 365
+                        },
+                        "Kills per Game": {
+                            "value": 58.24,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 72.59,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 394,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 14,
+            "row": {
+                "account": {
+                    "gamertag": "Unforgivr",
+                    "slug": "unforgivr",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 2, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 10.79,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 1754,
+                            "name": "Bronze 4",
+                            "percentage": 50.8,
+                            "nextRating": "Bronze 5",
+                            "distance": 1246
+                        },
+                        "Kills per Game": {
+                            "value": 43.15,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 78.87,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 71,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "position": 15,
+            "row": {
+                "account": {
+                    "gamertag": "precursor stats",
+                    "slug": "precursor-stats",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "May 24, 2020",
+                    "data": {
+                        "K\/D": {
+                            "value": 10.76,
+                            "slug": "kd"
+                        },
+                        "Rating": {
+                            "value": 11482,
+                            "name": "Gold 2",
+                            "percentage": 24.1,
+                            "nextRating": "Gold 3",
+                            "distance": 9518
+                        },
+                        "Kills per Game": {
+                            "value": 43.03,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 87.2,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 211,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

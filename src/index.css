@@ -3,6 +3,7 @@
 body {
 	font: 15px "Nunito", Segoe UI;
 	margin: 0;
+    overflow: hidden;
 } 
 
 a:link, a:visited {
@@ -14,74 +15,49 @@ a:hover, a:focus {
     color: #79dfff;
 }
 
-.header-image-vignette {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-    width: 33%;
-    height: 100%;
-    position: absolute;
-}
-
-.header-image-vignette-right {    
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-    width: 33%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-}
-
-.header-image-title-vignette {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+.header-image {
     width: 100%;
-    height: 160px;
-    position: absolute;
-    bottom: 0;
+    max-width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    background-attachment: scroll;
+    flex-direction: column;
+    box-shadow: 0 0 8px 0 black;
+    z-index: 9;
 }
 
 .header-image-title-wrapper {
-    max-width: 1600px;
-    justify-content: space-between;
     text-align: center;
-    margin: 15px 0;
-    align-items: center;
+    margin-top: 15px;
     flex-direction: column;
     z-index: 2;
     display: flex;
 }
 
-.header-image-title-flex-wrapper {    
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-
 .header-image-title {    
-    font-size: 75px;
+    font-size: 55px;
     font-weight: lighter;
     color: white;
-    transition: opacity 1.2s, transform 1.2s;
 }
 
 .header-image-subtitle {
     color: white;
     font-size: 24px;
-    transition: opacity 0.8s, transform 0.8s;
     margin-bottom: 10px;
 }
 
 div#page-footer-wrapper {
-    width: 100%;
     background: #111;
     box-shadow: 0 0 5px -1px #333;
     color: #fff;
+    margin: -25px -40px;
+    margin-top: 0px;
 }
 
 div#page-footer {
-    max-width: 1550px;
-    margin: auto;
-    padding: 15px 5px;
+    padding: 5px 45px 15px;
 }
 
 .react-tabs {
@@ -92,35 +68,108 @@ div#page-footer {
 	max-width: 1550px;
 }
 
-.header-image {    
-    height: 65vh;
-    min-height: 350px;
-    max-height: none;
-    background-image: url(/public/images/headshot.jpg);
-    background-position: 50% 60%;
-    background-attachment: scroll;
-    background-position: 50% 40%;
-    background-size: cover;
-    transition: background 3s;
-    position: relative;
+div#page-wrapper {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.image-circle {
+    background-image: url(/public/images/headshot-2.jpg);
+    width: 301px;
+    height: 301px;
+    background-size: contain;
+    border-radius: 100%;
+    margin-top: 150px;
+    background-size: 120%;
+    background-position: 55% 50%;
+    filter: saturate(1.25);
+}
+
+nav#navigation-sidebar {
+    padding: 5px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 19px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-list > ul > li {
+    padding: 5px 0;
+}
+
+nav.sidebar a {
+    display: flex;
+    justify-content: center;
+}
+
+nav.sidebar ul li svg {
+    font-size: 21px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.footnote {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 20px 20px 15px;
+    font-size: 16px;
+}
+
+p {
+    margin: 6px 0;
+}
+
+div#page-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.about-section {
+    border-bottom: 1px solid #222;
+}
+
+.about-section:last-of-type {
+    border: none;
+}
+
+hr {
+    border-color: #222;
+    border-style: solid;
 }
 
 div#view-wrapper {
-    width: 100%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-	background-color: #333;
+    background-color: #333;
     color: #fff;
+    min-height: 100vh;
+    padding: 25px;
+    padding-top: 30px;
+    width: 100%;
 }
 
-.intro-text {
+section.project-overview.center {
     text-align: center;
-    max-width: 1200px;
-    width: 100%;
-    font-size: 20px;
-    padding: 30px 0;
+}
+
+section.project-overview.center img {
+    max-width: 80%;
+    box-shadow: 0 0 8px 0 black;
+}
+
+section.project-overview.center h1 {
+    font-size: 2em;
 }
 
 .overview-text {
@@ -128,13 +177,22 @@ div#view-wrapper {
     padding: 10px 0;
 }
 
-.cv-list, .overview-text, .project-overview {
-    max-width: 1500px;
-	width: 100%;
+nav.sidebar ul li a.active {
+    cursor: text;
+    color: #fff;
+}
+
+div#view-wrapper p {
+    margin: revert;
+}
+
+div#view-wrapper div#demo-wrapper.profile-page p {
+    margin: 6px 0;
 }
 
 .react-tabs {
 	width: 100%;
+    max-width: 1550px;
 }
 
 .white-section {
@@ -218,6 +276,7 @@ li.save-button {
 section.dark-bg {
     background: #222;
     width: 100%;
+    max-width: 1550px;
     color: #eee;
 }
 
@@ -250,7 +309,9 @@ span.location {
 }
 
 .cv-list > ul {
-    list-style-type: "-  ";
+    list-style-type: "- ";
+    margin: revert;
+    padding: revert;
 }
 
 p.skills-list {
@@ -386,10 +447,6 @@ span.profile-stats.zero-value {
     opacity: 0.4;
 }
 
-section.project-overview {
-    border-bottom: 3px solid #666;
-}
-
 section.project-overview.no-border,
 .white-section section.project-overview {
 	border-bottom: none;
@@ -420,7 +477,7 @@ h2 {
 }
 
 @media (min-width: 2000px) {
-	.project-overview {
+	.project-overview, section.dark-bg {
         max-width: 1950px;
 		width: unset;
 	}
@@ -454,32 +511,5 @@ h2 {
 	}
 	.cv-list h3 {
 		font-size: 1em;
-	}
-}
-
-@media (max-width: 1000px) {
-	.header-image {
-		height: 40vh;
-	}
-	.header-image-vignette {
-		background: linear-gradient(90deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
-	}
-	.header-image-vignette-right {
-		background: linear-gradient(270deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
-	}
-	.header-image-title {
-		font-size: 50px;
-	}
-	.header-image-title-wrapper {
-		margin: 10px 0;
-	}
-	.header-image-subtitle {
-		margin-bottom: 0;
-	}
-	.header-image-title-vignette {
-		height: 130px;
-	}
-	#view-wrapper .intro-text.low-pad {
-		padding-bottom: 15px;
 	}
 }

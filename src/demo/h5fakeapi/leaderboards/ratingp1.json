@@ -1,0 +1,732 @@
+{
+    "order": {
+        "name": "Rating",
+        "slug": "rating"
+    },
+    "pages": {
+        "name": "page",
+        "page": "1",
+        "lastPage": 100
+    },
+    "options": {
+        "lb-per-page": "15",
+        "historical": 0,
+        "min-games": 50
+    },
+    "defaultOrder": {
+        "name": "Rating",
+        "slug": "rating"
+    },
+    "headers": [
+        {
+            "name": "Rating",
+            "slug": "rating"
+        },
+        {
+            "name": "K\/D",
+            "slug": "kd-ratio",
+            "ratio": true,
+            "numerator": {
+                "name": "Kills",
+                "slug": "kills"
+            },
+            "denominator": {
+                "name": "Deaths",
+                "slug": "deaths"
+            }
+        },
+        {
+            "name": "Kills per Game",
+            "slug": "kg-ratio",
+            "ratio": true,
+            "numerator": {
+                "name": "Kills",
+                "slug": "kills"
+            },
+            "denominator": {
+                "name": "Games Played",
+                "slug": "games-played"
+            }
+        },
+        {
+            "name": "Win %",
+            "slug": "win-percent",
+            "ratio": true,
+            "numerator": {
+                "name": "Games Won",
+                "slug": "games-won"
+            },
+            "denominator": {
+                "name": "Games Played",
+                "slug": "games-played"
+            }
+        },
+        {
+            "name": "Games Played",
+            "slug": "games-played"
+        }
+    ],
+    "rows": [
+        {
+            "position": 1,
+            "row": {
+                "account": {
+                    "gamertag": "no name 0000001",
+                    "slug": "no-name-0000001",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 230983,
+                            "name": "Onyx 6",
+                            "percentage": 1.4,
+                            "nextRating": "Champion",
+                            "distance": 69017
+                        },
+                        "K\/D": {
+                            "value": 3.61,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 23.76,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 46.59,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 16659,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 2,
+            "row": {
+                "account": {
+                    "gamertag": "Kylo Renegade14",
+                    "slug": "kylo-renegade14",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 228235,
+                            "name": "Onyx 5",
+                            "percentage": 96.47,
+                            "nextRating": "Onyx 6",
+                            "distance": 1765
+                        },
+                        "K\/D": {
+                            "value": 3.59,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 27.05,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 52.57,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 11054,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 3,
+            "row": {
+                "account": {
+                    "gamertag": "Ragingfury555",
+                    "slug": "ragingfury555",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Jan 23, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 221073,
+                            "name": "Onyx 5",
+                            "percentage": 82.15,
+                            "nextRating": "Onyx 6",
+                            "distance": 8927
+                        },
+                        "K\/D": {
+                            "value": 4.11,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.58,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 54.84,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 9689,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 4,
+            "row": {
+                "account": {
+                    "gamertag": "Surfin Neptune",
+                    "slug": "surfin-neptune",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 218314,
+                            "name": "Onyx 5",
+                            "percentage": 76.63,
+                            "nextRating": "Onyx 6",
+                            "distance": 11686
+                        },
+                        "K\/D": {
+                            "value": 5,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 32.36,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 50.39,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 9136,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 5,
+            "row": {
+                "account": {
+                    "gamertag": "Rhegrets",
+                    "slug": "rhegrets",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-3.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 218159,
+                            "name": "Onyx 5",
+                            "percentage": 76.32,
+                            "nextRating": "Onyx 6",
+                            "distance": 11841
+                        },
+                        "K\/D": {
+                            "value": 4.4,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 27.75,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 44.42,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 11336,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 6,
+            "row": {
+                "account": {
+                    "gamertag": "Wateriestknave5",
+                    "slug": "wateriestknave5",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-1.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 10, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 218093,
+                            "name": "Onyx 5",
+                            "percentage": 76.19,
+                            "nextRating": "Onyx 6",
+                            "distance": 11907
+                        },
+                        "K\/D": {
+                            "value": 2.34,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 21.46,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 39.81,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 17005,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 7,
+            "row": {
+                "account": {
+                    "gamertag": "iKakony",
+                    "slug": "ikakony",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-4.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 215608,
+                            "name": "Onyx 5",
+                            "percentage": 71.22,
+                            "nextRating": "Onyx 6",
+                            "distance": 14392
+                        },
+                        "K\/D": {
+                            "value": 3.85,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 25.28,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 45.29,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 12127,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 8,
+            "row": {
+                "account": {
+                    "gamertag": "Distrivusionx",
+                    "slug": "distrivusionx",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 28, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 213790,
+                            "name": "Onyx 5",
+                            "percentage": 67.58,
+                            "nextRating": "Onyx 6",
+                            "distance": 16210
+                        },
+                        "K\/D": {
+                            "value": 2.36,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 21.64,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 42.47,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 15280,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 9,
+            "row": {
+                "account": {
+                    "gamertag": "Rene Gtz7223",
+                    "slug": "rene-gtz7223",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Apr 6, 2020",
+                    "data": {
+                        "Rating": {
+                            "value": 210212,
+                            "name": "Onyx 5",
+                            "percentage": 60.42,
+                            "nextRating": "Onyx 6",
+                            "distance": 19788
+                        },
+                        "K\/D": {
+                            "value": 2.68,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 20.74,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 53.39,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 11666,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 10,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Precursor",
+                    "slug": "eagle-precursor",
+                    "link": true,
+                    "profile": {
+                        "images": {
+                            "spartan": "/images/h5/spartan-eagle.png",
+                            "emblem": "/images/h5/image-eagle.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 4, 2024",
+                    "data": {
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        },
+                        "K\/D": {
+                            "value": 4.69,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.33,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 57.73,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7945,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": true
+        },
+        {
+            "position": 11,
+            "row": {
+                "account": {
+                    "gamertag": "Jorge Iron X",
+                    "slug": "jorge-iron-x",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-4.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 17, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 200613,
+                            "name": "Onyx 5",
+                            "percentage": 41.23,
+                            "nextRating": "Onyx 6",
+                            "distance": 29387
+                        },
+                        "K\/D": {
+                            "value": 3.35,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 26.48,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 62.02,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 7935,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 12,
+            "row": {
+                "account": {
+                    "gamertag": "Rosalian",
+                    "slug": "rosalian",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 199264,
+                            "name": "Onyx 5",
+                            "percentage": 38.53,
+                            "nextRating": "Onyx 6",
+                            "distance": 30736
+                        },
+                        "K\/D": {
+                            "value": 4.56,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 32.08,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 74.31,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 5982,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 13,
+            "row": {
+                "account": {
+                    "gamertag": "Cyberkmus Cx",
+                    "slug": "cyberkmus-cx",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 25, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 198074,
+                            "name": "Onyx 5",
+                            "percentage": 36.15,
+                            "nextRating": "Onyx 6",
+                            "distance": 31926
+                        },
+                        "K\/D": {
+                            "value": 2.36,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 19.93,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 31.69,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 15362,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 14,
+            "row": {
+                "account": {
+                    "gamertag": "Terrorantula Xp",
+                    "slug": "terrorantula-xp",
+                    "profile": {
+                        "images": {
+                            "spartan": "\/images\/h5\/default-spartan.png",
+                            "emblem": "\/images\/h5\/emblems\/emblem-2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Feb 24, 2021",
+                    "data": {
+                        "Rating": {
+                            "value": 194783,
+                            "name": "Onyx 5",
+                            "percentage": 29.57,
+                            "nextRating": "Onyx 6",
+                            "distance": 35217
+                        },
+                        "K\/D": {
+                            "value": 3,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 22.31,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 48.66,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 9589,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        },
+        {
+            "position": 15,
+            "row": {
+                "account": {
+                    "gamertag": "Eagle Perdition",
+                    "slug": "eagle-perdition",
+                    "profile": {
+                        "images": {
+                            "spartan": "/images/h5/spartan-eagle2.png",
+                            "emblem": "/images/h5/image-eagle2.png"
+                        }
+                    }
+                },
+                "stats": {
+                    "date": "Nov 12, 2024",
+                    "data": {
+                        "Rating": {
+                            "value": 192831,
+                            "name": "Onyx 5",
+                            "percentage": 25.66,
+                            "nextRating": "Onyx 6",
+                            "distance": 37169
+                        },
+                        "K\/D": {
+                            "value": 7.73,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 42.49,
+                            "slug": "kills-per-game"
+                        },
+                        "Win %": {
+                            "value": 81.92,
+                            "slug": "win"
+                        },
+                        "Games Played": {
+                            "value": 4614,
+                            "slug": "games-played"
+                        }
+                    }
+                }
+            },
+            "canDisplayProgression": false
+        }
+    ]
+}
