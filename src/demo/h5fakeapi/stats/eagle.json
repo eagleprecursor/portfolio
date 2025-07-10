@@ -1,0 +1,1273 @@
+{
+    "player": {
+        "gamertag": "Eagle Precursor",
+        "slug": "eagle-precursor",
+        "profile": {
+            "images": {
+                "spartan": "/images/h5/spartan-eagle.png",
+                "emblem": "/images/h5/image-eagle.png"
+            }
+        }
+    },
+    "stats": {
+        "infectionStats": {
+            "date": "2024-11-04T19:44:35.000000Z",
+            "data": {
+                "Rating": {
+                    "columns": {
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        }
+                    }
+                },
+                "Ratios": {
+                    "columns": {
+                        "Accuracy": {
+                            "value": 50.66,
+                            "slug": "accuracy"
+                        },
+                        "K\/D": {
+                            "value": 4.69,
+                            "slug": "kd"
+                        },
+                        "Kills per Game": {
+                            "value": 29.33,
+                            "slug": "kills-per-game"
+                        },
+                        "Kills per Hour": {
+                            "value": 202.38,
+                            "slug": "kills-per-hour"
+                        },
+                        "Win %": {
+                            "value": 57.73,
+                            "slug": "win"
+                        }
+                    }
+                },
+                "Miscellaneous": {
+                    "columns": {
+                        "Alpha Infections": {
+                            "value": 15492,
+                            "slug": "alpha-infections",
+                            "per Game": 1.95
+                        },
+                        "Infections": {
+                            "value": 35618,
+                            "slug": "infections",
+                            "per Game": 4.48
+                        },
+                        "Last Stand Kills": {
+                            "value": 65533,
+                            "slug": "last-stand-kills",
+                            "per Game": 8.25
+                        },
+                        "Player Protected": {
+                            "value": 117,
+                            "slug": "player-protected",
+                            "per Game": 0.01
+                        },
+                        "Round Won": {
+                            "value": 8896,
+                            "slug": "round-won",
+                            "per Game": 1.12
+                        },
+                        "Rounds Survived": {
+                            "value": 3319,
+                            "slug": "rounds-survived",
+                            "per Game": 0.42
+                        },
+                        "Suicides": {
+                            "value": 812,
+                            "slug": "suicides",
+                            "per Game": 0.1
+                        },
+                        "Survival Kills": {
+                            "value": 197439,
+                            "slug": "survival-kills",
+                            "per Game": 24.85
+                        },
+                        "Time Survived": {
+                            "value": "28 days 23 hours",
+                            "slug": "time-survived"
+                        }
+                    }
+                },
+                "Main": {
+                    "sub": {
+                        "General": {
+                            "columns": {
+                                "Assists": {
+                                    "value": 11388,
+                                    "slug": "assists",
+                                    "per Game": 1.43
+                                },
+                                "Deaths": {
+                                    "value": 49663,
+                                    "slug": "deaths",
+                                    "per Game": 6.25
+                                },
+                                "Games Played": {
+                                    "value": 7945,
+                                    "slug": "games-played"
+                                },
+                                "Games Tied": {
+                                    "value": 49,
+                                    "slug": "games-tied"
+                                },
+                                "Games Won": {
+                                    "value": 4587,
+                                    "slug": "games-won"
+                                },
+                                "Grenade Damage": {
+                                    "value": 185425,
+                                    "slug": "grenade-damage",
+                                    "per Game": 23.34
+                                },
+                                "Grenade Kills": {
+                                    "value": 3740,
+                                    "slug": "grenade-kills",
+                                    "per Game": 0.47
+                                },
+                                "Headshots": {
+                                    "value": 74095,
+                                    "slug": "headshots",
+                                    "per Game": 9.33
+                                },
+                                "Kills": {
+                                    "value": 233026,
+                                    "slug": "kills",
+                                    "per Game": 29.33
+                                },
+                                "Melee Kills": {
+                                    "value": 6591,
+                                    "slug": "melee-kills",
+                                    "per Game": 0.83
+                                },
+                                "Shots Fired": {
+                                    "value": 635266,
+                                    "slug": "shots-fired",
+                                    "per Game": 79.96
+                                },
+                                "Shots Landed": {
+                                    "value": 321826,
+                                    "slug": "shots-landed",
+                                    "per Game": 40.51
+                                },
+                                "Time Played": {
+                                    "value": "47 days 23 hours",
+                                    "slug": "time-played"
+                                },
+                                "Weapon Damage": {
+                                    "value": 12532602,
+                                    "slug": "weapon-damage",
+                                    "per Game": 1577.42
+                                }
+                            }
+                        },
+                        "Spartan": {
+                            "columns": {
+                                "Spartan Rank": {
+                                    "value": 152,
+                                    "slug": "spartan-rank"
+                                },
+                                "XP": {
+                                    "value": 89000000,
+                                    "percentToNext": 78
+                                }
+                            }
+                        }
+                    }
+                },
+                "Medals": {
+                    "sub": {
+                        "Weapon Proficiency": {
+                            "columns": {
+                                "Airborne Snapshot!": {
+                                    "value": 198,
+                                    "slug": "airborne-snapshot",
+                                    "per Game": 0.02
+                                },
+                                "Big Gun Runner": {
+                                    "value": 0,
+                                    "slug": "big-gun-runner"
+                                },
+                                "Grenade Kill": {
+                                    "value": 0,
+                                    "slug": "grenade-kill"
+                                },
+                                "Hat Trick": {
+                                    "value": 11,
+                                    "slug": "hat-trick",
+                                    "per Game": 0
+                                },
+                                "Headshot": {
+                                    "value": 73599,
+                                    "slug": "headshot",
+                                    "per Game": 9.26
+                                },
+                                "Longshot": {
+                                    "value": 39,
+                                    "slug": "longshot",
+                                    "per Game": 0
+                                },
+                                "Perfect Kill": {
+                                    "value": 1,
+                                    "slug": "perfect-kill",
+                                    "per Game": 0
+                                },
+                                "Rocket Mary": {
+                                    "value": 5,
+                                    "slug": "rocket-mary",
+                                    "per Game": 0
+                                },
+                                "Snapshot": {
+                                    "value": 316,
+                                    "slug": "snapshot",
+                                    "per Game": 0.04
+                                },
+                                "Snipeltaneous!": {
+                                    "value": 0,
+                                    "slug": "snipeltaneous"
+                                },
+                                "Sniper Headshot": {
+                                    "value": 95,
+                                    "slug": "sniper-headshot",
+                                    "per Game": 0.01
+                                },
+                                "Snipunch": {
+                                    "value": 0,
+                                    "slug": "snipunch"
+                                }
+                            }
+                        },
+                        "Multi Kill": {
+                            "columns": {
+                                "Double Kill": {
+                                    "value": 40798,
+                                    "slug": "double-kill",
+                                    "per Game": 5.14
+                                },
+                                "Triple Kill": {
+                                    "value": 19589,
+                                    "slug": "triple-kill",
+                                    "per Game": 2.47
+                                },
+                                "Overkill": {
+                                    "value": 12036,
+                                    "slug": "overkill",
+                                    "per Game": 1.51
+                                },
+                                "Killtacular": {
+                                    "value": 8502,
+                                    "slug": "killtacular",
+                                    "per Game": 1.07
+                                },
+                                "Killtrocity": {
+                                    "value": 6346,
+                                    "slug": "killtrocity",
+                                    "per Game": 0.8
+                                },
+                                "Killamanjaro": {
+                                    "value": 4904,
+                                    "slug": "killamanjaro",
+                                    "per Game": 0.62
+                                },
+                                "Killtastrophe": {
+                                    "value": 3884,
+                                    "slug": "killtastrophe",
+                                    "per Game": 0.49
+                                },
+                                "Killpocalypse": {
+                                    "value": 3160,
+                                    "slug": "killpocalypse",
+                                    "per Game": 0.4
+                                },
+                                "Killionaire": {
+                                    "value": 2612,
+                                    "slug": "killionaire",
+                                    "per Game": 0.33
+                                }
+                            }
+                        },
+                        "Infection": {
+                            "columns": {
+                                "Ancient One": {
+                                    "value": 207,
+                                    "slug": "ancient-one",
+                                    "per Game": 0.03
+                                },
+                                "Flatline": {
+                                    "value": 2818,
+                                    "slug": "flatline",
+                                    "per Game": 0.35
+                                },
+                                "Infected": {
+                                    "value": 32120,
+                                    "slug": "infected",
+                                    "per Game": 4.04
+                                },
+                                "Last Man Standing": {
+                                    "value": 7073,
+                                    "slug": "last-man-standing",
+                                    "per Game": 0.89
+                                },
+                                "Resourceful": {
+                                    "value": 748,
+                                    "slug": "resourceful",
+                                    "per Game": 0.09
+                                },
+                                "Stalker": {
+                                    "value": 17,
+                                    "slug": "stalker",
+                                    "per Game": 0
+                                },
+                                "Survived": {
+                                    "value": 3319,
+                                    "slug": "survived",
+                                    "per Game": 0.42
+                                },
+                                "Infector": {
+                                    "value": 8450,
+                                    "slug": "infector",
+                                    "per Game": 1.06
+                                },
+                                "Carrier": {
+                                    "value": 3493,
+                                    "slug": "carrier",
+                                    "per Game": 0.44
+                                },
+                                "Ravager": {
+                                    "value": 1441,
+                                    "slug": "ravager",
+                                    "per Game": 0.18
+                                },
+                                "Plague Bearer": {
+                                    "value": 638,
+                                    "slug": "plague-bearer",
+                                    "per Game": 0.08
+                                },
+                                "Lord Of The Flies": {
+                                    "value": 270,
+                                    "slug": "lord-of-the-flies",
+                                    "per Game": 0.03
+                                },
+                                "Zombie Hunter": {
+                                    "value": 13324,
+                                    "slug": "zombie-hunter",
+                                    "per Game": 1.68
+                                },
+                                "Zombie Slayer": {
+                                    "value": 7956,
+                                    "slug": "zombie-slayer",
+                                    "per Game": 1
+                                },
+                                "Hell's Janitor": {
+                                    "value": 4426,
+                                    "slug": "hells-janitor",
+                                    "per Game": 0.56
+                                },
+                                "Hell Jumper": {
+                                    "value": 2370,
+                                    "slug": "hell-jumper",
+                                    "per Game": 0.3
+                                },
+                                "Zombicide": {
+                                    "value": 1379,
+                                    "slug": "zombicide",
+                                    "per Game": 0.17
+                                },
+                                "The Cure": {
+                                    "value": 785,
+                                    "slug": "the-cure",
+                                    "per Game": 0.1
+                                }
+                            }
+                        },
+                        "Style": {
+                            "columns": {
+                                "Airsassination": {
+                                    "value": 2,
+                                    "slug": "airsassination",
+                                    "per Game": 0
+                                },
+                                "Alley-oop": {
+                                    "value": 0,
+                                    "slug": "alley-oop"
+                                },
+                                "Assassination": {
+                                    "value": 21,
+                                    "slug": "assassination",
+                                    "per Game": 0
+                                },
+                                "Beat Down": {
+                                    "value": 316,
+                                    "slug": "beat-down",
+                                    "per Game": 0.04
+                                },
+                                "Bodyguard": {
+                                    "value": 1,
+                                    "slug": "bodyguard",
+                                    "per Game": 0
+                                },
+                                "Brawler": {
+                                    "value": 1486,
+                                    "slug": "brawler",
+                                    "per Game": 0.19
+                                },
+                                "Bxr": {
+                                    "value": 0,
+                                    "slug": "bxr"
+                                },
+                                "Cliffhanger": {
+                                    "value": 1944,
+                                    "slug": "cliffhanger",
+                                    "per Game": 0.24
+                                },
+                                "Close Call": {
+                                    "value": 4773,
+                                    "slug": "close-call",
+                                    "per Game": 0.6
+                                },
+                                "Cluster Luck": {
+                                    "value": 338,
+                                    "slug": "cluster-luck",
+                                    "per Game": 0.04
+                                },
+                                "Combat Evolved": {
+                                    "value": 0,
+                                    "slug": "combat-evolved"
+                                },
+                                "Distraction": {
+                                    "value": 1112,
+                                    "slug": "distraction",
+                                    "per Game": 0.14
+                                },
+                                "Emp Assist": {
+                                    "value": 38,
+                                    "slug": "emp-assist",
+                                    "per Game": 0
+                                },
+                                "Fastball": {
+                                    "value": 1,
+                                    "slug": "fastball",
+                                    "per Game": 0
+                                },
+                                "First Strike": {
+                                    "value": 4549,
+                                    "slug": "first-strike",
+                                    "per Game": 0.57
+                                },
+                                "From The Grave": {
+                                    "value": 88,
+                                    "slug": "from-the-grave",
+                                    "per Game": 0.01
+                                },
+                                "Ground Pound": {
+                                    "value": 926,
+                                    "slug": "ground-pound",
+                                    "per Game": 0.12
+                                },
+                                "Guardian Angel": {
+                                    "value": 1,
+                                    "slug": "guardian-angel",
+                                    "per Game": 0
+                                },
+                                "Gun Punch": {
+                                    "value": 84,
+                                    "slug": "gun-punch",
+                                    "per Game": 0.01
+                                },
+                                "Hail Mary": {
+                                    "value": 90,
+                                    "slug": "hail-mary",
+                                    "per Game": 0.01
+                                },
+                                "Hard Target": {
+                                    "value": 3,
+                                    "slug": "hard-target",
+                                    "per Game": 0
+                                },
+                                "Last Shot": {
+                                    "value": 1464,
+                                    "slug": "last-shot",
+                                    "per Game": 0.18
+                                },
+                                "Melee Kill": {
+                                    "value": 5023,
+                                    "slug": "melee-kill",
+                                    "per Game": 0.63
+                                },
+                                "Nadeshot": {
+                                    "value": 287,
+                                    "slug": "nadeshot",
+                                    "per Game": 0.04
+                                },
+                                "Noob Combo": {
+                                    "value": 0,
+                                    "slug": "noob-combo"
+                                },
+                                "Pounder": {
+                                    "value": 1,
+                                    "slug": "pounder",
+                                    "per Game": 0
+                                },
+                                "Pounder Assist": {
+                                    "value": 1,
+                                    "slug": "pounder-assist",
+                                    "per Game": 0
+                                },
+                                "Protector": {
+                                    "value": 116,
+                                    "slug": "protector",
+                                    "per Game": 0.01
+                                },
+                                "Quickdraw": {
+                                    "value": 10,
+                                    "slug": "quickdraw",
+                                    "per Game": 0
+                                },
+                                "Retribution": {
+                                    "value": 1,
+                                    "slug": "retribution",
+                                    "per Game": 0
+                                },
+                                "Reversal": {
+                                    "value": 294,
+                                    "slug": "reversal",
+                                    "per Game": 0.04
+                                },
+                                "Sayonara": {
+                                    "value": 0,
+                                    "slug": "sayonara"
+                                },
+                                "Showstopper": {
+                                    "value": 17,
+                                    "slug": "showstopper",
+                                    "per Game": 0
+                                },
+                                "Spartan Charge": {
+                                    "value": 239,
+                                    "slug": "spartan-charge",
+                                    "per Game": 0.03
+                                },
+                                "Spray N' Pray": {
+                                    "value": 144,
+                                    "slug": "spray-n-pray",
+                                    "per Game": 0.02
+                                },
+                                "Starkiller": {
+                                    "value": 30,
+                                    "slug": "starkiller",
+                                    "per Game": 0
+                                },
+                                "Stuck": {
+                                    "value": 2,
+                                    "slug": "stuck",
+                                    "per Game": 0
+                                },
+                                "Team Takedown": {
+                                    "value": 76,
+                                    "slug": "team-takedown",
+                                    "per Game": 0.01
+                                },
+                                "Team Takedown Assist": {
+                                    "value": 183,
+                                    "slug": "team-takedown-assist",
+                                    "per Game": 0.02
+                                },
+                                "Triple Double": {
+                                    "value": 15,
+                                    "slug": "triple-double",
+                                    "per Game": 0
+                                },
+                                "Wingman": {
+                                    "value": 160,
+                                    "slug": "wingman",
+                                    "per Game": 0.02
+                                }
+                            }
+                        },
+                        "Vehicles": {
+                            "columns": {
+                                "Buckle Up": {
+                                    "value": 1,
+                                    "slug": "buckle-up",
+                                    "per Game": 0
+                                },
+                                "Busted": {
+                                    "value": 0,
+                                    "slug": "busted"
+                                },
+                                "Flyin' High": {
+                                    "value": 0,
+                                    "slug": "flyin-high"
+                                },
+                                "Hijack": {
+                                    "value": 0,
+                                    "slug": "hijack"
+                                },
+                                "Mantis Assist": {
+                                    "value": 0,
+                                    "slug": "mantis-assist"
+                                },
+                                "Mantis Destroyed": {
+                                    "value": 2,
+                                    "slug": "mantis-destroyed",
+                                    "per Game": 0
+                                },
+                                "Mongoose Assist": {
+                                    "value": 0,
+                                    "slug": "mongoose-assist"
+                                },
+                                "Mongoose Destroyed": {
+                                    "value": 1,
+                                    "slug": "mongoose-destroyed",
+                                    "per Game": 0
+                                },
+                                "Pineapple Express": {
+                                    "value": 1,
+                                    "slug": "pineapple-express",
+                                    "per Game": 0
+                                },
+                                "Road Trip": {
+                                    "value": 2,
+                                    "slug": "road-trip",
+                                    "per Game": 0
+                                },
+                                "Scorpion Assist": {
+                                    "value": 1,
+                                    "slug": "scorpion-assist",
+                                    "per Game": 0
+                                },
+                                "Scorpion Destroyed": {
+                                    "value": 0,
+                                    "slug": "scorpion-destroyed"
+                                },
+                                "Splatter": {
+                                    "value": 29,
+                                    "slug": "splatter",
+                                    "per Game": 0
+                                },
+                                "Warthog Assist": {
+                                    "value": 7,
+                                    "slug": "warthog-assist",
+                                    "per Game": 0
+                                },
+                                "Warthog Destroyed": {
+                                    "value": 2,
+                                    "slug": "warthog-destroyed",
+                                    "per Game": 0
+                                },
+                                "Wasp Assist": {
+                                    "value": 0,
+                                    "slug": "wasp-assist"
+                                },
+                                "Wasp Destroyed": {
+                                    "value": 0,
+                                    "slug": "wasp-destroyed"
+                                },
+                                "Wheelman": {
+                                    "value": 60,
+                                    "slug": "wheelman",
+                                    "per Game": 0.01
+                                }
+                            }
+                        }
+                    }
+                },
+                "Weapons": {
+                    "sub": {
+                        "Unknown": {
+                            "columns": {
+                                "Environmental Explosives": {
+                                    "value": 1065,
+                                    "slug": "environmental-explosives",
+                                    "per Game": 0.13
+                                },
+                                "Spartan": {
+                                    "value": 8125,
+                                    "slug": "spartan",
+                                    "per Game": 1.02
+                                }
+                            }
+                        },
+                        "Turret": {
+                            "columns": {
+                                "Chaingun Turret": {
+                                    "value": 227,
+                                    "slug": "chaingun-turret",
+                                    "per Game": 0.03
+                                },
+                                "Gauss Turret": {
+                                    "value": 18,
+                                    "slug": "gauss-turret",
+                                    "per Game": 0
+                                },
+                                "Jorge's Chaingun": {
+                                    "value": 213,
+                                    "slug": "jorges-chaingun",
+                                    "per Game": 0.03
+                                },
+                                "Rocket Pod Turret": {
+                                    "value": 7,
+                                    "slug": "rocket-pod-turret",
+                                    "per Game": 0
+                                }
+                            }
+                        },
+                        "Standard": {
+                            "columns": {
+                                "Assault Rifle": {
+                                    "value": 9931,
+                                    "slug": "assault-rifle",
+                                    "per Game": 1.25
+                                },
+                                "Battle Rifle": {
+                                    "value": 123,
+                                    "slug": "battle-rifle",
+                                    "per Game": 0.02
+                                },
+                                "Boltshot": {
+                                    "value": 138,
+                                    "slug": "boltshot",
+                                    "per Game": 0.02
+                                },
+                                "Carbine": {
+                                    "value": 181,
+                                    "slug": "carbine",
+                                    "per Game": 0.02
+                                },
+                                "Dmr": {
+                                    "value": 24181,
+                                    "slug": "dmr",
+                                    "per Game": 3.04
+                                },
+                                "Lightrifle": {
+                                    "value": 1851,
+                                    "slug": "lightrifle",
+                                    "per Game": 0.23
+                                },
+                                "Magnum": {
+                                    "value": 37607,
+                                    "slug": "magnum",
+                                    "per Game": 4.73
+                                },
+                                "Plasma Pistol": {
+                                    "value": 132,
+                                    "slug": "plasma-pistol",
+                                    "per Game": 0.02
+                                },
+                                "Smg": {
+                                    "value": 784,
+                                    "slug": "smg",
+                                    "per Game": 0.1
+                                },
+                                "Storm Rifle": {
+                                    "value": 0,
+                                    "slug": "storm-rifle"
+                                },
+                                "Suppressor": {
+                                    "value": 27,
+                                    "slug": "suppressor",
+                                    "per Game": 0
+                                }
+                            }
+                        },
+                        "Power": {
+                            "columns": {
+                                "Binary Rifle": {
+                                    "value": 55,
+                                    "slug": "binary-rifle",
+                                    "per Game": 0.01
+                                },
+                                "Energy Sword": {
+                                    "value": 35343,
+                                    "slug": "energy-sword",
+                                    "per Game": 4.45
+                                },
+                                "Gravity Hammer": {
+                                    "value": 160,
+                                    "slug": "gravity-hammer",
+                                    "per Game": 0.02
+                                },
+                                "Halo One Pistol": {
+                                    "value": 20723,
+                                    "slug": "halo-one-pistol",
+                                    "per Game": 2.61
+                                },
+                                "Hydra Launcher": {
+                                    "value": 528,
+                                    "slug": "hydra-launcher",
+                                    "per Game": 0.07
+                                },
+                                "Needler": {
+                                    "value": 1,
+                                    "slug": "needler",
+                                    "per Game": 0
+                                },
+                                "Railgun": {
+                                    "value": 1251,
+                                    "slug": "railgun",
+                                    "per Game": 0.16
+                                },
+                                "Reach Grenade Launcher": {
+                                    "value": 309,
+                                    "slug": "reach-grenade-launcher",
+                                    "per Game": 0.04
+                                },
+                                "Rocket Launcher": {
+                                    "value": 173,
+                                    "slug": "rocket-launcher",
+                                    "per Game": 0.02
+                                },
+                                "Saw": {
+                                    "value": 4528,
+                                    "slug": "saw",
+                                    "per Game": 0.57
+                                },
+                                "Scattershot": {
+                                    "value": 72,
+                                    "slug": "scattershot",
+                                    "per Game": 0.01
+                                },
+                                "Shotgun": {
+                                    "value": 79404,
+                                    "slug": "shotgun",
+                                    "per Game": 9.99
+                                },
+                                "Sniper Rifle": {
+                                    "value": 900,
+                                    "slug": "sniper-rifle",
+                                    "per Game": 0.11
+                                },
+                                "Spnkr Rocket Launcher": {
+                                    "value": 773,
+                                    "slug": "spnkr-rocket-launcher",
+                                    "per Game": 0.1
+                                }
+                            }
+                        },
+                        "Grenade": {
+                            "columns": {
+                                "Frag Grenade": {
+                                    "value": 3480,
+                                    "slug": "frag-grenade",
+                                    "per Game": 0.44
+                                },
+                                "Plasma Grenade": {
+                                    "value": 7,
+                                    "slug": "plasma-grenade",
+                                    "per Game": 0
+                                },
+                                "Splinter Grenade": {
+                                    "value": 253,
+                                    "slug": "splinter-grenade",
+                                    "per Game": 0.03
+                                }
+                            }
+                        },
+                        "Vehicle": {
+                            "columns": {
+                                "Mantis": {
+                                    "value": 17,
+                                    "slug": "mantis",
+                                    "per Game": 0
+                                },
+                                "Mongoose": {
+                                    "value": 0,
+                                    "slug": "mongoose"
+                                },
+                                "Scorpion": {
+                                    "value": 407,
+                                    "slug": "scorpion",
+                                    "per Game": 0.05
+                                },
+                                "Warthog": {
+                                    "value": 30,
+                                    "slug": "warthog",
+                                    "per Game": 0
+                                },
+                                "Wasp": {
+                                    "value": 0,
+                                    "slug": "wasp"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "lbpositions": {
+            "date": "2024-11-05T18:17:55.000000Z",
+            "data": {
+                "Games Won": 14,
+                "Kills": 12,
+                "Deaths": 238,
+                "Assists": 134,
+                "Headshots": 5,
+                "Weapon Damage": 21,
+                "Shots Fired": 72,
+                "Shots Landed": 29,
+                "Melee Kills": 30,
+                "Games Played": 105,
+                "Time Played": 83,
+                "Killionaire": 8,
+                "Survived": 22,
+                "Killpocalypse": 10,
+                "Last Man Standing": 27,
+                "Snapshot": 282,
+                "Killtastrophe": 10,
+                "Ancient One": 22,
+                "Hat Trick": 91,
+                "Killamanjaro": 9,
+                "Flatline": 95,
+                "Killtrocity": 8,
+                "Resourceful": 5,
+                "Showstopper": 63,
+                "Killtacular": 9,
+                "Stalker": 1575,
+                "Overkill": 9,
+                "Infected": 54,
+                "Triple Kill": 10,
+                "Zombie Hunter": 20,
+                "Double Kill": 11,
+                "Zombie Slayer": 10,
+                "Hell's Janitor": 9,
+                "Longshot": 30,
+                "Hell Jumper": 8,
+                "Pounder Assist": 8,
+                "Headshot": 5,
+                "Zombicide": 8,
+                "Pounder": 12,
+                "Fastball": 453,
+                "Rocket Mary": 40,
+                "The Cure": 8,
+                "Airsassination": 292,
+                "Infector": 32,
+                "Carrier": 13,
+                "Ravager": 8,
+                "Plague Bearer": 3,
+                "Lord Of The Flies": 2,
+                "Guardian Angel": 161,
+                "Spray N' Pray": 159,
+                "Nadeshot": 5,
+                "Stuck": 336,
+                "Spartan Charge": 119,
+                "Ground Pound": 12,
+                "Distraction": 116,
+                "Close Call": 6,
+                "Hail Mary": 68,
+                "From The Grave": 270,
+                "Last Shot": 7,
+                "First Strike": 75,
+                "Beat Down": 149,
+                "Assassination": 1595,
+                "Quickdraw": 2,
+                "Emp Assist": 61,
+                "Melee Kill": 37,
+                "Starkiller": 42,
+                "Team Takedown": 509,
+                "Spartan": 34,
+                "Environmental Explosives": 4,
+                "Gauss Turret": 1351,
+                "Carbine": 39,
+                "Lightrifle": 3,
+                "Plasma Pistol": 21,
+                "Boltshot": 14,
+                "Assault Rifle": 112,
+                "Smg": 74,
+                "Scattershot": 750,
+                "Railgun": 20,
+                "Hydra Launcher": 188,
+                "Shotgun": 19,
+                "Saw": 160,
+                "Frag Grenade": 66,
+                "Energy Sword": 53,
+                "Splinter Grenade": 192,
+                "Dmr": 2,
+                "Plasma Grenade": 797,
+                "Sniper Rifle": 452,
+                "Rocket Launcher": 249,
+                "Magnum": 17,
+                "Spnkr Rocket Launcher": 17,
+                "Gravity Hammer": 12,
+                "Halo One Pistol": 2,
+                "Suicides": 405,
+                "Round Won": 12,
+                "Perfect Kill": 54,
+                "Player Protected": 694,
+                "Rounds Survived": 22,
+                "Infections": 56,
+                "Survival Kills": 10,
+                "Time Survived": 45,
+                "Alpha Infections": 14,
+                "Last Stand Kills": 8,
+                "Snipeltaneous!": 0,
+                "Reversal": 21,
+                "Retribution": 1593,
+                "Grenade Kills": 77,
+                "Grenade Damage": 91,
+                "Games Tied": 166,
+                "Airborne Snapshot!": 57,
+                "Cluster Luck": 131,
+                "Brawler": 13,
+                "Cliffhanger": 11,
+                "Sniper Headshot": 621,
+                "Wingman": 359,
+                "Gun Punch": 59,
+                "Team Takedown Assist": 556,
+                "Hard Target": 78,
+                "Triple Double": 54,
+                "Protector": 698,
+                "Warthog Destroyed": 998,
+                "Mantis Assist": 0,
+                "Warthog Assist": 399,
+                "Big Gun Runner": 0,
+                "Wheelman": 293,
+                "Mantis Destroyed": 297,
+                "Mantis": 1214,
+                "Splatter": 364,
+                "Reach Grenade Launcher": 266,
+                "Buckle Up": 56,
+                "Road Trip": 241,
+                "Battle Rifle": 92,
+                "Chaingun Turret": 625,
+                "Rocket Pod Turret": 793,
+                "Warthog": 330,
+                "Jorge's Chaingun": 163,
+                "Scorpion": 5,
+                "Mongoose Destroyed": 461,
+                "Binary Rifle": 537,
+                "Suppressor": 78,
+                "Bodyguard": 10,
+                "Pineapple Express": 25,
+                "Needler": 18,
+                "Scorpion Assist": 5,
+                "Infection Conversion Kill": 1,
+                "Mongoose": 0,
+                "Snipunch": 0,
+                "Flyin' High": 0,
+                "Wasp": 0,
+                "Wasp Destroyed": 0,
+                "Wasp Assist": 0,
+                "Mongoose Assist": 0,
+                "Storm Rifle": 0,
+                "Scorpion Destroyed": 0,
+                "Noob Combo": 0,
+                "Sayonara": 0,
+                "Hijack": 0,
+                "Alley-oop": 0,
+                "Combat Evolved": 0,
+                "Bxr": 0,
+                "Spartan Rank": 0,
+                "XP": 0,
+                "Busted": 0
+            }
+        },
+        "communityComparison": [
+            {
+                "column": {
+                    "name": "Kills",
+                    "slug": "kills"
+                },
+                "record": 0.875,
+                "comparisonRecord": 0.125
+            },
+            {
+                "column": {
+                    "name": "Deaths",
+                    "slug": "deaths"
+                },
+                "record": 0.717,
+                "comparisonRecord": 0.283
+            },
+            {
+                "column": {
+                    "name": "Assists",
+                    "slug": "assists"
+                },
+                "record": 0.772,
+                "comparisonRecord": 0.228
+            },
+            {
+                "column": {
+                    "name": "Games Played",
+                    "slug": "games-played"
+                },
+                "record": 0.774,
+                "comparisonRecord": 0.226
+            },
+            {
+                "column": {
+                    "name": "Time Played",
+                    "slug": "time-played"
+                },
+                "record": 0.783,
+                "comparisonRecord": 0.217
+            },
+            {
+                "column": {
+                    "name": "Accuracy",
+                    "slug": "accuracy",
+                    "ratio": true,
+                    "numerator": {
+                        "name": "Shots Landed",
+                        "slug": "shots-landed"
+                    },
+                    "denominator": {
+                        "name": "Shots Fired",
+                        "slug": "shots-fired"
+                    }
+                },
+                "record": 0.591,
+                "comparisonRecord": 0.409
+            },
+            {
+                "column": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                },
+                "record": 0.96,
+                "comparisonRecord": 0.04
+            }
+        ],
+        "topMedalSummary": {
+            "Killionaire": {
+                "value": 2612,
+                "per Game": 0.33
+            },
+            "The Cure": {
+                "value": 785,
+                "per Game": 0.1
+            },
+            "Lord Of The Flies": {
+                "value": 270,
+                "per Game": 0.03
+            }
+        }
+    },
+    "badges": {
+        "awardedBadges": [
+            {
+                "name": "Killionaire Mastery",
+                "description": "Earn 2500 Killionaires in Infection, an incredible feat!",
+                "tier": {
+                    "name": "Champion",
+                    "slug": "champion",
+                    "description": "This is an incredible achievement. Well done!"
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            },
+            {
+                "name": "Journey to Greatness",
+                "description": "Earn 500 Killionaires in Infection!",
+                "tier": {
+                    "name": "Diamond",
+                    "slug": "diamond",
+                    "description": "This badge is extremely rare and will take a lot of skill to achieve."
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            },
+            {
+                "name": "Naire's aint so special now",
+                "description": "Earn 250 Killionaires in Infection!",
+                "tier": {
+                    "name": "Platinum",
+                    "slug": "platinum",
+                    "description": "This badge is rare, and expands upon the challenges set by the gold tier."
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            },
+            {
+                "name": "Infection is my favourite game",
+                "description": "Play 2500 games of Infection",
+                "tier": {
+                    "name": "Gold",
+                    "slug": "gold",
+                    "description": "This badge provides challenge, and is not for the faint hearted."
+                },
+                "image": {
+                    "path": "https:\/\/www.pngall.com\/wp-content\/uploads\/15\/Xbox-Controller-PNG-Images-HD.png"
+                }
+            },
+            {
+                "name": "The Purge",
+                "description": "Earn 100 Killionaires in Infection!",
+                "tier": {
+                    "name": "Gold",
+                    "slug": "gold",
+                    "description": "This badge provides challenge, and is not for the faint hearted."
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            },
+            {
+                "name": "Killionaire Novice",
+                "description": "Earn 10 Killionaires in Infection!",
+                "tier": {
+                    "name": "Silver",
+                    "slug": "silver",
+                    "description": "This badge is a little harder than bronze, but achievable with a bit of work."
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            },
+            {
+                "name": "The Grind Begins!",
+                "description": "Play 100 games of Infection",
+                "tier": {
+                    "name": "Bronze",
+                    "slug": "bronze",
+                    "description": "This badge can be achieved by the majority of players."
+                },
+                "image": {
+                    "path": "https:\/\/www.pngall.com\/wp-content\/uploads\/15\/Xbox-Controller-PNG-Images-HD.png"
+                }
+            },
+            {
+                "name": "Zombie Hunter",
+                "description": "Earn your first Killionaire in Infection!",
+                "tier": {
+                    "name": "Bronze",
+                    "slug": "bronze",
+                    "description": "This badge can be achieved by the majority of players."
+                },
+                "badgeColumn": {
+                    "name": "Killionaire",
+                    "slug": "killionaire",
+                    "category": "Medals",
+                    "subcategory": "MultiKill"
+                }
+            }
+        ]
+    }
+}

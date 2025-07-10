@@ -1,0 +1,30 @@
+.react-tabs {
+    @apply w-full text-center;
+}
+
+.react-tabs__tab-list {
+    @apply pl-4 mb-2 inline-flex flex-wrap grow-0 items-center;
+    border-bottom: 1px solid var(--color-gray-500);
+}
+
+.react-tabs__tab-list > li {
+    @apply cursor-pointer m-0;
+
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    transition: color var(--transition-speed);
+    font-size: var(--text-2xl);
+}
+
+/** First tab depth **/
+.react-tabs .react-tabs__tab--selected, .react-tabs__tab--selected {
+    font-weight: bold;
+    cursor: auto;
+    margin-bottom: -1px;
+    border-bottom: 2px solid var(--color-first-depth);
+}
+
+.react-tabs .react-tabs__tab--selected,
+.react-tabs__tab-list > li:hover {
+    color: var(--color-first-depth);
+}

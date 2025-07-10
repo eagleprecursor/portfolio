@@ -1,0 +1,68 @@
+{
+    "player": {
+        "gamertag": "Eagle Precursor",
+        "slug": "eagle-precursor",
+        "profile": {
+            "images": {
+                "spartan": "/images/h5/spartan-eagle.png",
+                "emblem": "/images/h5/image-eagle.png"
+            }
+        }
+    },
+    "breakdown": {
+        "infectionStats": {
+            "date": "2024-11-04T19:44:35.000000Z",
+            "data": {
+                "Rating": {
+                    "columns": {
+                        "Rating": {
+                            "value": 205551,
+                            "name": "Onyx 5",
+                            "percentage": 51.1,
+                            "nextRating": "Onyx 6",
+                            "distance": 24449
+                        }
+                    }
+                },
+                "Main": {
+                    "sub": {
+                        "General": {
+                            "columns": {
+                                "Time Played": {
+                                    "value": "47 days 23 hours",
+                                    "slug": "time-played"
+                                }
+                            }
+                        },
+                        "Spartan": {
+                            "columns": {
+                                "Spartan Rank": {
+                                    "value": 152,
+                                    "slug": "spartan-rank"
+                                },
+                                "XP": {
+                                    "value": 89000000,
+                                    "percentToNext": 78
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "topMedalSummary": {
+            "Killionaire": {
+                "value": 2612,
+                "per Game": 0.33
+            },
+            "The Cure": {
+                "value": 785,
+                "per Game": 0.1
+            },
+            "Lord Of The Flies": {
+                "value": 270,
+                "per Game": 0.03
+            }
+        }
+    }
+}

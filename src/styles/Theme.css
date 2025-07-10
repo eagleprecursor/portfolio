@@ -1,0 +1,81 @@
+@theme {
+    --color-first-depth: #169fce;
+    --color-second-depth: #ff8549;
+    --color-third-depth: #009e00;
+    --color-fourth-depth: #ae55ff;
+    --color-second-depth-faded: #ff854980;
+    --color-third-depth-faded: #009e0080;
+    --color-fourth-depth-faded: #ae55ff80;
+
+	--color-top100: #26d226;
+
+	--color-gray-700: #333;
+	--color-gray-800: #2a2a2a;
+	--color-gray-900: #222;
+	--color-gray-950: #111;
+	--color-link: #2ab1ee;
+	--color-link-hover: #79dfff;
+	--color-link-active: #fff;
+
+	--font-sans: 'Nunito';
+	--text-5xl: 3.25rem;
+	--title-size-sm: var(--text-3xl);
+	--title-size-lg: var(--text-4xl);
+	--title-size-xl: var(--text-5xl);
+	--subtitle-size-sm: var(--text-lg);
+	--subtitle-size-xl: var(--text-2xl);
+
+	--transition-speed: 0.5s;
+}
+
+a:link, a:visited {
+	color: var(--color-link);
+    transition: all var(--transition-speed);
+}
+
+a:hover, a:focus {
+	color: var(--color-link-hover);
+}
+
+a.active {
+	color: var(--color-link-active);   
+	cursor: text;
+}
+
+h1 {
+	@apply text-4xl font-bold mt-6 mb-6;
+}
+
+h2 {
+	@apply text-3xl font-bold mt-5 mb-5;
+}
+
+h3 {
+	@apply text-2xl font-bold mt-4 mb-4;
+}
+
+h4 {
+	@apply text-xl font-bold mt-3 mb-3;
+}
+
+p,
+#view-wrapper div#demo-wrapper.profile-page #demo-content p {
+    @apply mt-2 mb-2;
+}
+
+li {
+    @apply mt-2 mb-2;
+}
+
+#view-wrapper p {
+    @apply mt-4 mb-4;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.dark-bg {
+	background-color: var(--color-gray-900);
+}

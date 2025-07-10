@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "tailwindcss";
+
+@import "./styles/Theme.css";
+@import "./styles/Layout.css";
+@import "./styles/Responsive.css";
+@import "./styles/Tabs.css";
+@import "./styles/__StatsTracker.css";
+
+img.project-image {
+
+	@apply m-auto block mt-5 mb-5;
+    max-width: 80%;
+    box-shadow: 0 0 8px 0 black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article.bordered-sections section {
+    border-bottom: 1px solid var(--color-gray-900);
+    margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+article.bordered-sections section:last-of-type {
+    border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cv-list h2 {
+	color: var(--color-second-depth);
 }
 
-.App-link {
-  color: #61dafb;
+section.cv-list, .project-overview {
+    font-size: 18px;
+    text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span.location, .cv-list h3 {
+	@apply font-thin italic;
+}
+
+.cv-list ul {
+    list-style-type: "- ";
+    margin: revert;
+    padding: revert;
+}
+
+.cv-list ul ul {
+    list-style-type: "• ";
+}
+
+
+.overview-highlight-row {
+    box-shadow: 0 0 3px 3px var(--color-second-depth);
+    padding: 10px;
+	margin: 35px 0;
+}
+
+.overview-highlight-row .info {
+    margin: 0px 0 10px 10px;
+}
+
+.overview-highlight-row h4 {
+    color: var(--color-second-depth);
+    border-bottom: 2px solid var(--color-second-depth);
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.overview-highlight-row.second {
+	box-shadow: 0 0 3px 3px var(--color-third-depth);
+}
+
+.overview-highlight-row.second h4 {
+	color: var(--color-third-depth);
+    border-bottom: 2px solid var(--color-third-depth);
+}
+
+.overview-highlight-row.third {
+	box-shadow: 0 0 3px 3px var(--color-fourth-depth);
+}
+
+.overview-highlight-row.third h4 {
+	color: var(--color-fourth-depth);
+    border-bottom: 2px solid var(--color-fourth-depth);
+}
+
+.progress-line-chart .canvas-wrapper {
+    height: 400px;
+    @apply w-auto float-none;
+}
+
+.panel {
+    @apply flex justify-between items-center grow;
+    transition: all var(--transition-speed);
+    border: 1px solid transparent;
+}
+
+.progress-panel.panel {
+    padding: 15px 15px 0;
+}
+
+.panel-buttons button {
+    color: var(--color-link);    
+    font-family: "Nunito", Segoe UI;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.panel p {
+    @apply text-lg m-0;
 }

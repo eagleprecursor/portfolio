@@ -1,0 +1,347 @@
+header {
+	width: 100%;
+	height: 120px;
+    padding: 20px 25px;
+    border-bottom: 1px solid black;
+}
+
+#header-image-circle {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+
+	background-size: 171%;
+    background-position: 55% 40%;
+}
+
+#header-image-title {    
+	font-size: var(--title-size-sm);
+}
+
+#header-image-subtitle {
+	font-size: var(--subtitle-size-sm);
+}
+
+section.content-section, .react-tabs, #demo-content {
+    max-width: 96rem;
+	@apply p-3 w-full;
+}
+
+.player-progress-charts article {
+    width: 100%;
+}
+
+.cv-list h2 {
+	@apply flex flex-col;
+}
+
+span.player-comparison-stats.Weapons-stats {
+    width: 100%;
+}
+
+div.head-to-head-stats {
+	@apply flex flex-col items-center;
+}
+
+span.player-comparison-stats > .flex {
+    @apply text-lg items-center;
+}
+
+span.player-comparison-stats span.weapon-halo5 {
+    height: 50px;
+	@apply m-1 ml-4 mr-4;
+}    
+
+div#demo-content {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.h5-spartan-image {
+    height: 158px;
+    min-width: 120px;
+}
+
+.player-details h3 {
+    font-size: 18px
+}
+
+.rating-head-to-head .rating-breakdown.rating-bar {
+    min-width: 80px;
+}
+
+.rating-head-to-head .rating-breakdown .rating-image {
+    width: 50px;
+    height: 50px;
+}
+
+.rating-head-to-head .rating-breakdown .rating-image:after {
+    left: 50px;
+}
+
+.demo-header-image-wrapper {
+	height: 200px;
+}
+
+.demo-header-image-title-wrapper {
+	@apply ml-8 mb-3;
+}
+
+.header-image-title {
+	@apply text-5xl;
+}
+
+.main-stats {
+	@apply flex-col items-start;
+}
+
+.profile-page .breakdowns-col {
+	@apply flex-col items-start;
+}
+
+.profile-page .player-summary {
+    @apply flex-col;
+}
+
+.profile-page .stats-breakdown {
+    @apply m-0 mt-3;
+}
+
+.profile-page .rating-breakdown.rating-bar {
+    height: 100px;
+}
+
+.profile-page .rating-breakdown .rating-image {
+    height: 100px;
+    width: 90px;
+    background-size: contain;
+}
+
+.profile-page .rating-numbers {
+    top: 15px;
+}
+
+.profile-page .rating-numbers > p:first-of-type {
+    @apply text-lg font-bold;
+}
+
+div#view-wrapper {
+	min-height: calc(100vh - 212px);
+}
+
+/* md - 768px */
+@media (width >= 48rem) {
+	
+	.profile-page .player-summary {
+		@apply flex-row;
+	}
+
+	.profile-page .player-breakdown {
+		@apply flex justify-between;
+	}
+
+	section.content-section, .react-tabs, #demo-content {
+		@apply p-5;
+	}
+}
+
+
+/* lg - 1024px */
+@media (width >= 64rem) {
+	
+	nav#sidebar ul {
+		@apply flex flex-wrap text-lg;
+	}
+	
+	.profile-page .breakdowns-col {
+		@apply flex-row;
+	}
+
+	.profile-page .player-breakdown {
+		@apply flex-col;
+	}
+	
+	.profile-page .rating-breakdown.rating-bar {
+		height: 130px;
+	}
+
+	.profile-page .rating-breakdown .rating-image {
+		height: 130px;
+		width: 150px;
+	}
+
+	.profile-page .rating-numbers {
+		top: 20px;
+	}
+
+	.rating-breakdown.rating-bar {
+		height: 100px;
+	}
+	
+	.rating-breakdown .rating-image {
+		height: 100px;
+		width: 90px;
+		background-size: contain;
+	}
+	
+	.rating-numbers {
+		top: 15px;
+	}
+	
+	#view-wrapper .rating-numbers > p:first-of-type {
+		font-size: 30px;
+	}
+
+	.main-stats {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	section.content-section, .react-tabs, #demo-content {
+		@apply p-8;
+	}
+	
+	.cv-list h2 {
+		@apply flex-row justify-between;
+	}
+
+	span.location {
+		@apply text-right;
+		min-width: 130px;
+	}
+
+	div.head-to-head-stats {
+		@apply flex-row items-start;
+	}
+
+	.demo-header-image-wrapper {
+		height: 340px;
+	}
+	
+	.header-image-title {
+		font-size: 55px;
+	}
+
+	.demo-header-image-title-wrapper {
+		margin-left: 55px;
+	}
+}
+
+/* xl - 1280px */
+@media (width >= 80rem) {
+	
+	header {
+		max-width: 300px;
+		height: 100vh;
+		flex-direction: column;
+		padding: revert;
+		border-bottom: revert;
+	}
+
+	div#view-wrapper {
+		@apply min-h-screen;
+	}
+	
+	#header-image-circle {
+		width: 200px;
+		height: 200px;
+		margin-top: 75px;
+		@apply mb-4 mr-0;
+	}
+	
+	#header-image-title {    
+		font-size: var(--title-size-lg);
+	}
+
+	#header-image-subtitle {
+		font-size: var(--subtitle-size-xl);
+	}
+
+	nav#sidebar ul {
+		@apply flex-col mt-5;
+	}
+}
+
+/** 2xl and enough height */
+@media (height >= 64rem) and (width >= 96rem) {
+
+	header {
+		max-width: 400px;
+	}
+
+	#header-image-circle {
+		width: 301px;
+		height: 301px;
+		margin-top: 150px;
+
+		background-size: 120%;
+		background-position: 55% 50%;
+	}	
+	
+	#header-image-title {    
+		font-size: var(--title-size-xl);
+	}
+}
+
+/** 2xl	96rem (1536px) **/
+@media (width >= 96rem) {
+	
+	.player-progress-charts article {
+		width: 50%;
+	}
+	
+	span.player-comparison-stats.Weapons-stats {
+		width: 50%;
+	}
+	
+	div.head-to-head-stats {
+		@apply items-center text-xl;
+	}
+	
+	span.player-comparison-stats span.weapon-halo5 {
+		height: 100px;
+	}    
+}
+
+/** 1080p **/
+@media (width >= 120rem) {
+		
+	.badge-overview {
+		display: flex;
+		@apply mt-3 mb-3;
+	}
+
+	span.player-comparison-stats.Weapons-stats {
+		width: 33%;
+	}
+
+	.h5-spartan-image {
+		min-width: 230px;
+		height: 300px;
+	}
+	
+	.player-details h3 {
+		font-size: 22px;
+	}
+	
+	.rating-head-to-head .rating-breakdown.rating-bar {
+		min-width: 100px;
+	}
+	
+	.rating-head-to-head .rating-breakdown .rating-image {
+		width: 75px;
+		height: 75px;
+	}
+	
+	.rating-head-to-head .rating-breakdown .rating-image:after {
+		left: 70px;
+	}
+}
+
+/* 2048px */
+@media (width >= 128rem) {
+
+	section.content-section, .react-tabs, div#demo-content {
+		max-width: 128rem;
+	}
+}	
